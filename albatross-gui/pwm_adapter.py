@@ -1,3 +1,5 @@
+import RPi.GPIO as GPIO
+
 __PWM_BASE_WIDTH = 20.0  # ms
 
 __PWM_MIN_WIDTH = 1.0  # ms
@@ -6,7 +8,7 @@ __PWM_MAX_WIDTH = 2.0  # ms
 
 
 def __ms_to_duty_cycle(ms):
-    return ms / __PWM_BASE_WIDTH
+    return ms / __PWM_BASE_WIDTH * 100
 
 
 __PWM_MIN_DC = __ms_to_duty_cycle(__PWM_MIN_WIDTH)
@@ -17,7 +19,7 @@ __PWM_STORE = []
 
 
 def __ms_to_freq(ms):
-    return 1 / (ms * 1000.0)
+    return 1 / (ms / 1000.0)
 
 
 def initialize_pwm(bcm_pin_number):
@@ -29,7 +31,7 @@ def initialize_pwm(bcm_pin_number):
     print("using center width of " + repr(__PWM_CENTER_WIDTH) + "ms")
     print(" => " + repr(__PWM_CENTER_DC) + "%")
 
-    GPIO.setupmode(GPIO.BCM)
+    GPIO.setmode(GPIO.BCM)
     GPIO.setup(bcm_pin_number, GPIO.OUT)
     pwm = GPIO.PWM(bcm_pin_number, base_frequency)
     pwm.start(__PWM_CENTER_DC)
@@ -57,3 +59,4 @@ def release_all():
     for pwm in __PWM_STORE:
         pwm.stop()
     __PWM_STORE.clear()
+    print("stopped all pwm connections")

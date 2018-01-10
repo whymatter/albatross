@@ -27,9 +27,9 @@ class MainWindow(QtWidgets.QWidget):
         self.ui_elements.btn_reset.clicked.connect(self.__on_reset_clicked)
 
         self.ui_elements.slider_steering.setRange(SLIDER_MIN_VALUE, SLIDER_MAX_VALUE)
-        self.ui_elements.slider_steering.setValue(0.5)
+        self.ui_elements.slider_steering.setValue(50)
         self.ui_elements.slider_speed.setRange(SLIDER_MIN_VALUE, SLIDER_MAX_VALUE)
-        self.ui_elements.slider_speed.setValue(0.5)
+        self.ui_elements.slider_speed.setValue(50)
 
         self.ui_elements.slider_steering.sliderMoved.connect(self.__on_steering_moved)
         self.ui_elements.slider_speed.sliderMoved.connect(self.__on_speed_moved)
@@ -59,6 +59,8 @@ class MainWindow(QtWidgets.QWidget):
         steering_index = initialize_pwm(STEERING_BCM_PIN)
         speed_index = initialize_pwm(SPEED_BCM_PIN)
         self.car_state = CarState(steering_index, speed_index)
+        self.ui_elements.slider_steering.setValue(50)
+        self.ui_elements.slider_speed.setValue(50)
         self.__enable_controls()
         self.__display_car_state()
 
