@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/albatross-gui.iml" filepath="$PROJECT_DIR$/.idea/albatross-gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../tensorflow_tests/.idea/tensorflow_tests.iml" filepath="$PROJECT_DIR$/../tensorflow_tests/.idea/tensorflow_tests.iml" />
     </modules>
   </component>
 </project>

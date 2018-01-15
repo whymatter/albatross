@@ -5,6 +5,7 @@ from PyQt5.QtWidgets import QApplication
 
 from multiprocessing import Queue
 
+from controller_window import DrawCircles
 from car_state import CarState
 from open_cv_image_widget import OpenCVImageWidget
 from open_cv_capture_thread import OpenCVCaptureThread
@@ -44,6 +45,10 @@ class MainWindow(QtWidgets.QWidget):
         self.__initialize_camera()
 
         self.__disable_controls()
+
+        self.controller_window = DrawCircles()
+        self.controller_window.controller_moved.connect(self.__on_controller_moved)
+        self.controller_window.show()
 
     def closeEvent(self, event):
         # does not get called!
@@ -120,6 +125,14 @@ class MainWindow(QtWidgets.QWidget):
             proportion = new_value / SLIDER_MAX_VALUE
             if change_duty_cycle(self.car_state.get_steering_index(), proportion):
                 self.car_state.set_steering(proportion)
+                self.__display_car_state()
+
+    def __on_controller_moved(self, x, y):
+        x = x / 2 + 0.5
+        print(x)
+        if self.car_state is not None:
+            if change_duty_cycle(self.car_state.get_steering_index(), x):
+                self.car_state.set_steering(x)
                 self.__display_car_state()
 
     def __on_speed_moved(self, new_value):
