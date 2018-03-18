@@ -5,6 +5,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="tensorflow_tests" />
+    <orderEntry type="module" module-name="camera_mapping" />
+    <orderEntry type="module" module-name="cup_detection_2" />
   </component>
   <component name="TestRunnerService">
     <option name="projectConfiguration" value="Nosetests" />
