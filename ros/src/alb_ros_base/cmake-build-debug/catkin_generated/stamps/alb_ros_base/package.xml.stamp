@@ -1,0 +1,14 @@
+<package format="2">
+    <name>alb_ros_base</name>
+    <version>1.2.4</version>
+    <description>
+        This package provides foo capability.
+    </description>
+    <maintainer email="seitz-oliver@gmx.de">Oliver Seitz</maintainer>
+    <license>BSD</license>
+
+    <depend>roscpp</depend>
+    <depend>alb_base</depend>
+
+    <buildtool_depend>catkin</buildtool_depend>
+</package>
