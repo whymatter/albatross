@@ -1,1 +1,0 @@
-set(ORDERED_PATHS "/home/whymatter/github.com/albatross/ros/devel/lib;/opt/ros/melodic/lib")

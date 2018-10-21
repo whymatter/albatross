@@ -1,3 +1,0 @@
-/home/whymatter/github.com/albatross/ros/src/ai/nn-tester/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/whymatter/github.com/albatross/ros/src/ai/nn-tester/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/whymatter/github.com/albatross/ros/src/ai/nn-tester/cmake-build-debug/CMakeFiles/nn-tester.dir
