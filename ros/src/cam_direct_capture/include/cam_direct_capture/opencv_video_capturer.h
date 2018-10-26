@@ -20,8 +20,11 @@ namespace alb {
 
                 ::boost::optional<::cv::Mat> frame();
 
+                bool start();
+
             private:
                 ::cv::VideoCapture videoCapture_;
+                int32_t camera_index_;
             };
         }
     }

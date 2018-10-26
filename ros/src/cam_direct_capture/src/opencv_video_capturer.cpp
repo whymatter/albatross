@@ -8,7 +8,7 @@ namespace alb {
     namespace cam {
         namespace direct_capture {
             OpenCVVideoCapturer::OpenCVVideoCapturer(int32_t camera_index)
-                    : videoCapture_(::cv::VideoCapture{camera_index}) {
+                    : camera_index_{camera_index} {
 
             }
 
@@ -16,8 +16,19 @@ namespace alb {
                 this->videoCapture_.release();
             }
 
+            bool OpenCVVideoCapturer::start() {
+                bool success = this->videoCapture_.open(this->camera_index_);
+                if (success) {
+                    this->videoCapture_.set(CV_CAP_PROP_FRAME_WIDTH, 640);
+                    this->videoCapture_.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+                }
+
+                return success;
+            }
+
             ::boost::optional<::cv::Mat> OpenCVVideoCapturer::frame() {
-                if (!this->videoCapture_.isOpened()) {
+                // check that device is 'open', if not reopen it
+                if (!this->videoCapture_.isOpened() && !this->start()) {
                     return ::boost::optional<::cv::Mat>();
                 }
 
@@ -28,7 +39,7 @@ namespace alb {
                     return ::boost::optional<::cv::Mat>();
                 }
 
-                return frame;
+                return ::boost::optional<::cv::Mat>(frame);
             }
         }
     }

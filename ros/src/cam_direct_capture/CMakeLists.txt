@@ -16,6 +16,10 @@ catkin_package(
         include
         CATKIN_DEPENDS
         alb_ros_base
+        image_transport
+        std_msgs
+        sensor_msgs
+        cv_bridge
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/cam_direct_capture ${catkin_INCLUDE_DIRS})

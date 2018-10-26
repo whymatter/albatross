@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h
+
+/home/whymatter/github.com/albatross/ros/src/alb_base/src/alb_node.cpp
+alb_node.h
+/home/whymatter/github.com/albatross/ros/src/alb_base/src/alb_node.h
+

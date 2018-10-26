@@ -1,0 +1,10 @@
+# cmake
+cmake-build-debug
+
+# catkin
+./devel
+./build
+./install
+
+# clion
+.idea

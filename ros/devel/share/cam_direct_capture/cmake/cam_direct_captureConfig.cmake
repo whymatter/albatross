@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/whymatter/github.com/albatross/ros/devel/lib;/home/whymatter/github.com/albatross/ros/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/whymatter/github.com/albatross/ros/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -160,7 +160,7 @@ foreach(t ${cam_direct_capture_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "alb_ros_base")
+set(depends "alb_ros_base;image_transport;std_msgs;sensor_msgs;cv_bridge")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

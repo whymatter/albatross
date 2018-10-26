@@ -12,8 +12,12 @@ namespace alb {
 
             }
 
+            AlbRosPublisher::AlbRosPublisher(const alb::base::ros::AlbRosPublisher &other)
+                    : publisher_{other.publisher_} {
+
+            }
+
             AlbRosPublisher::~AlbRosPublisher() {
-                this->publisher_.shutdown();
             }
         }
     }

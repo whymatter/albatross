@@ -9,7 +9,7 @@
 int main(int argc, char **argv) {
     ::ros::init(argc, argv, "cam_direct_capture");
 
-    ::alb::cam::direct_capture::DirectCaptureNode directCaptureNode;
+    ::alb::cam::direct_capture::DirectCaptureNode directCaptureNode{25.0};
     directCaptureNode.Initialize();
     directCaptureNode.RunCyclic();
 

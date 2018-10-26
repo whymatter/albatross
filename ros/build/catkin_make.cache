@@ -1,0 +1,2 @@
+ai:alb_base:alb_ros_base:cam:cam_direct_capture
+-DCATKIN_DEVEL_PREFIX=/home/whymatter/github.com/albatross/ros/devel -DCMAKE_INSTALL_PREFIX=/home/whymatter/github.com/albatross/ros/install -G Unix Makefiles

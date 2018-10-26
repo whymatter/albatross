@@ -34,8 +34,9 @@ namespace alb {
                     return subscriber;
                 }
 
+                template<typename T>
                 AlbRosPublisher Advertise(std::string topicName, uint32_t queueSize = 1) {
-                    AlbRosPublisher publisher{this->nodeHandle_.advertise(topicName, queueSize)};
+                    AlbRosPublisher publisher{this->nodeHandle_.advertise<T>(topicName, queueSize)};
                     this->publisher_.push_back(publisher);
                     return publisher;
                 }
