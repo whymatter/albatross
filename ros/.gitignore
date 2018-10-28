@@ -8,3 +8,9 @@ cmake-build-debug
 
 # clion
 .idea
+
+# catkin
+devel
+build
+logs
+.catkin_tools
