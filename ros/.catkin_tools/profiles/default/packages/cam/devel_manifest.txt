@@ -1,0 +1,4 @@
+cam
+/home/whymatter/github.com/albatross/ros/devel/.private/cam/lib/pkgconfig/cam.pc /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/cam.pc
+/home/whymatter/github.com/albatross/ros/devel/.private/cam/share/cam/cmake/camConfig.cmake /home/whymatter/github.com/albatross/ros/devel/share/cam/cmake/camConfig.cmake
+/home/whymatter/github.com/albatross/ros/devel/.private/cam/share/cam/cmake/camConfig-version.cmake /home/whymatter/github.com/albatross/ros/devel/share/cam/cmake/camConfig-version.cmake

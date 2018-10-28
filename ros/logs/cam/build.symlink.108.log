@@ -1,0 +1,3 @@
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/cam.pc
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/cam/cmake/camConfig.cmake
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/cam/cmake/camConfig-version.cmake

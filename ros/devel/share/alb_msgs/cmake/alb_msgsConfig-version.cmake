@@ -1,0 +1,1 @@
+/home/whymatter/github.com/albatross/ros/devel/.private/alb_msgs/share/alb_msgs/cmake/alb_msgsConfig-version.cmake

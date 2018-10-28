@@ -7,18 +7,24 @@
 #IncludeRegexTransform: 
 
 /home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h
-
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node.h
-ros/ros.h
--
-functional
--
-vector
--
 string
 -
-alb_base/alb_node.h
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_base/alb_node.h
+boost/function.hpp
+-
+
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_publisher.h
+boost/shared_ptr.hpp
+-
+
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_subscriber.h
+
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h
+string
+-
+boost/function.hpp
+-
+ros/ros.h
+-
 alb_ros_subscriber.h
 /home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h
 alb_ros_publisher.h
@@ -29,10 +35,14 @@ ros/ros.h
 -
 boost/shared_ptr.hpp
 -
+alb_base/alb_publisher.h
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_base/alb_publisher.h
 
 /home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h
 ros/ros.h
 -
+alb_base/alb_subscriber.h
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_base/alb_subscriber.h
 
 /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/cam_direct_capture_node.h
 ros/ros.h
@@ -45,10 +55,14 @@ boost/make_shared.hpp
 -
 boost/shared_ptr.hpp
 -
-alb_ros_base/alb_ros_node.h
-/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/alb_ros_base/alb_ros_node.h
+alb_base/alb_node.h
+/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/alb_base/alb_node.h
+alb_base/alb_publisher.h
+/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/alb_base/alb_publisher.h
 opencv_video_capturer.h
 /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/opencv_video_capturer.h
+alb_ros_base/alb_ros_node_handle.h
+/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/alb_ros_base/alb_ros_node_handle.h
 
 /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture/opencv_video_capturer.h
 boost/optional.hpp
@@ -63,6 +77,8 @@ cam_direct_capture_node.h
 /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp
 ros/ros.h
 -
+alb_ros_base/alb_ros_node_handle.h
+/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/alb_ros_base/alb_ros_node_handle.h
 cam_direct_capture_node.h
 /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.h
 

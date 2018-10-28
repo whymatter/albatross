@@ -1,0 +1,42 @@
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:12:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node_handle.cpp:5[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:24:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KAlbRosPublisher[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+                 AlbRosPublisher(const AlbRosSubscriber &other[01;31m[K)[m[K
+                                                              [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:33:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kalb::base::ros::AlbRosSubscriber::~AlbRosSubscriber()[m[K’ cannot be overloaded
+                 [01;31m[K~[m[KAlbRosSubscriber();
+                 [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:29:17:[m[K [01;31m[Kerror: [m[Kwith ‘[01m[Kalb::base::ros::AlbRosSubscriber::~AlbRosSubscriber()[m[K’
+                 [01;31m[K~[m[KAlbRosSubscriber() {
+                 [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:[m[K In member function ‘[01m[Kint alb::base::ros::AlbRosSubscriber::AlbRosPublisher(const alb::base::ros::AlbRosSubscriber&)[m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:25:27:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+                         : [01;31m[Ksubscriber_[m[K{other.subscriber_} {
+                           [01;31m[K^~~~~~~~~~~[m[K
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_subscriber.cpp:5:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:24:62:[m[K [01;31m[Kerror: [m[KISO C++ forbids declaration of ‘[01m[KAlbRosPublisher[m[K’ with no type [[01;31m[K-fpermissive[m[K]
+                 AlbRosPublisher(const AlbRosSubscriber &other[01;31m[K)[m[K
+                                                              [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:33:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kalb::base::ros::AlbRosSubscriber::~AlbRosSubscriber()[m[K’ cannot be overloaded
+                 [01;31m[K~[m[KAlbRosSubscriber();
+                 [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:29:17:[m[K [01;31m[Kerror: [m[Kwith ‘[01m[Kalb::base::ros::AlbRosSubscriber::~AlbRosSubscriber()[m[K’
+                 [01;31m[K~[m[KAlbRosSubscriber() {
+                 [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:[m[K In member function ‘[01m[Kint alb::base::ros::AlbRosSubscriber::AlbRosPublisher(const alb::base::ros::AlbRosSubscriber&)[m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:25:27:[m[K [01;31m[Kerror: [m[Konly constructors take member initializers
+                         : [01;31m[Ksubscriber_[m[K{other.subscriber_} {
+                           [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_subscriber.cpp:[m[K At global scope:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_subscriber.cpp:15:13:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kalb::base::ros::AlbRosSubscriber::~AlbRosSubscriber()[m[K’
+             [01;31m[KAlbRosSubscriber[m[K::~AlbRosSubscriber() {
+             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_subscriber.cpp:5:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:29:17:[m[K [01;36m[Knote: [m[K‘[01m[Kalb::base::ros::AlbRosSubscriber::~AlbRosSubscriber()[m[K’ previously defined here
+                 [01;36m[K~[m[KAlbRosSubscriber() {
+                 [01;36m[K^[m[K
+make[2]: *** [CMakeFiles/alb_ros_base.dir/src/alb_subscriber.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/alb_ros_base.dir/src/alb_ros_node_handle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/alb_ros_base.dir/all] Error 2
+make: *** [all] Error 2

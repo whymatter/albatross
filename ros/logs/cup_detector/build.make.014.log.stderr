@@ -1,0 +1,5 @@
+/usr/bin/x86_64-linux-gnu-ld: cannot find -ldarknet
+collect2: error: ld returned 1 exit status
+make[2]: *** [/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector/lib/cup_detector/cup_detector] Error 1
+make[1]: *** [CMakeFiles/cup_detector.dir/all] Error 2
+make: *** [all] Error 2

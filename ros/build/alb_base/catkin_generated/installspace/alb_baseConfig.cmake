@@ -68,7 +68,7 @@ set(alb_base_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(alb_base_SOURCE_PREFIX /home/whymatter/github.com/albatross/ros/src/alb_base)
-  set(alb_base_DEVEL_PREFIX /home/whymatter/github.com/albatross/ros/devel)
+  set(alb_base_DEVEL_PREFIX /home/whymatter/github.com/albatross/ros/devel/.private/alb_base)
   set(alb_base_INSTALL_PREFIX "")
   set(alb_base_PREFIX ${alb_base_DEVEL_PREFIX})
 else()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/whymatter/github.com/albatross/ros/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/whymatter/github.com/albatross/ros/install/lib;/home/whymatter/github.com/albatross/ros/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

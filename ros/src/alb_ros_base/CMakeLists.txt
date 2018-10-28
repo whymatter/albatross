@@ -11,6 +11,7 @@ catkin_package(
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         CATKIN_DEPENDS
         alb_base
+        roscpp
         LIBRARIES
         ${PROJECT_NAME}
 )
@@ -19,11 +20,12 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/alb_ros_base ${catkin_IN
 
 add_library(
         ${PROJECT_NAME}
-        include/alb_ros_base/alb_ros_node.h
+        include/alb_ros_base/alb_ros_node_handle.h
         include/alb_ros_base/alb_ros_subscriber.h
         include/alb_ros_base/alb_ros_publisher.h
-        src/alb_ros_node.cpp
-        src/alb_ros_subscriber.cpp
-        src/alb_ros_publisher.cpp
+        src/alb_ros_node_handle.cpp
+        src/alb_subscriber.cpp
 )
+
 add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})

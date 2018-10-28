@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.10.2)
 project(cam_direct_capture)
 
-# OpenCV install folder
-set(OpenCV_DIR /usr/local/share/OpenCV/)
-
 find_package(Boost REQUIRED)
+
+get_property(OpenCV_DIR GLOBAL PROPERTY OpenCV_DIR)
 
 find_package(
         catkin REQUIRED COMPONENTS

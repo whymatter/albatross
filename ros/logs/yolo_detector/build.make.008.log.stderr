@@ -1,0 +1,12 @@
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:8:0[m[K:
+/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h: In instantiation of ‘[01m[Kalb::yolo_detector::CupDetectorNode<TNode>::CupDetectorNode(TNode&) [with TNode = alb::base::ros::AlbRosNodehandle][m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:14:105:[m[K   required from here
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:29:75:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static member function ‘[01m[Kvoid alb::yolo_detector::CupDetectorNode<TNode>::CamCallback(sensor_msgs::Image) [with TNode = alb::base::ros::AlbRosNodehandle; sensor_msgs::Image = sensor_msgs::Image_<std::allocator<void> >][m[K’
+                 this->template Subscribe("cam/direct/image", [01;31m[K::boost::bind(CupDetectorNode::CamCallback, this)[m[K);
+                                                              [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:32:18:[m[K [01;36m[Knote: [m[Kdeclared here
+             void [01;36m[KCamCallback[m[K(::sensor_msgs::Image image) {
+                  [01;36m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/yolo_detector.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/yolo_detector.dir/all] Error 2
+make: *** [all] Error 2

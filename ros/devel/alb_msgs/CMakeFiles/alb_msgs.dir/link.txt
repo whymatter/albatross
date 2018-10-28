@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libalb_msgs.so -o ../devel/lib/libalb_msgs.so  

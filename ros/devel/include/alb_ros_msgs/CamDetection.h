@@ -1,0 +1,1 @@
+/home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/include/alb_ros_msgs/CamDetection.h

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whymatter/github.com/albatross/ros/src
+CMAKE_SOURCE_DIR = /home/whymatter/github.com/albatross/ros/src/alb_ros_base
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whymatter/github.com/albatross/ros/build
+CMAKE_BINARY_DIR = /home/whymatter/github.com/albatross/ros/build/alb_ros_base
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -67,18 +67,6 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -102,15 +90,17 @@ test/fast: test
 
 .PHONY : test/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -122,6 +112,16 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target install
 install: preinstall
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/whymatter/github.com/albatross/ros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/whymatter/github.com/albatross/ros/build/CMakeFiles /home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/progress.marks
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/whymatter/github.com/albatross/ros/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles /home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/progress.marks
+	$(MAKE) -f CMakeFiles/Makefile2 all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/clean
+	$(MAKE) -f CMakeFiles/Makefile2 clean
 .PHONY : clean
 
 # The main clean target
@@ -154,339 +154,397 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/preinstall
+	$(MAKE) -f CMakeFiles/Makefile2 preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/whymatter/github.com/albatross/ros/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-alb_ros_base/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/roscpp_generate_messages_py.dir/rule
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
 
-# Convenience name for target.
-roscpp_generate_messages_py: alb_ros_base/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/roscpp_generate_messages_py.dir/build.make alb_ros_base/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/roscpp_generate_messages_eus.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_eus: alb_ros_base/CMakeFiles/roscpp_generate_messages_eus.dir/rule
-
-.PHONY : roscpp_generate_messages_eus
-
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/roscpp_generate_messages_eus.dir/build.make alb_ros_base/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: alb_ros_base/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make alb_ros_base/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_cpp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: alb_ros_base/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make alb_ros_base/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_lisp
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_cpp: alb_ros_base/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : std_msgs_generate_messages_cpp
-
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make alb_ros_base/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make alb_ros_base/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: alb_ros_base/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make alb_ros_base/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-alb_ros_base/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: alb_ros_base/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
 .PHONY : std_msgs_generate_messages_nodejs
 
 # fast build rule for target.
 std_msgs_generate_messages_nodejs/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make alb_ros_base/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
 
-# Convenience name for target.
-alb_ros_base/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
 
-# Convenience name for target.
-roscpp_generate_messages_nodejs: alb_ros_base/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
-
-.PHONY : roscpp_generate_messages_nodejs
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
 
 # fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make alb_ros_base/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
 
-# Convenience name for target.
-alb_ros_base/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+#=============================================================================
+# Target rules for targets named doxygen
 
-# Convenience name for target.
-std_msgs_generate_messages_py: alb_ros_base/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/std_msgs_generate_messages_py.dir/build.make alb_ros_base/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+doxygen/fast:
+	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
 
-# Convenience name for target.
-alb_ros_base/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+#=============================================================================
+# Target rules for targets named clean_test_results
 
-# Convenience name for target.
-roscpp_generate_messages_cpp: alb_ros_base/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-
-.PHONY : roscpp_generate_messages_cpp
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make alb_ros_base/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
 
-# Convenience name for target.
-alb_ros_base/CMakeFiles/alb_ros_base.dir/rule:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f CMakeFiles/Makefile2 alb_ros_base/CMakeFiles/alb_ros_base.dir/rule
-.PHONY : alb_ros_base/CMakeFiles/alb_ros_base.dir/rule
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
 
-# Convenience name for target.
-alb_ros_base: alb_ros_base/CMakeFiles/alb_ros_base.dir/rule
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
 
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
+# Target rules for targets named download_extra_data
+
+# Build rule for target.
+download_extra_data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 download_extra_data
+.PHONY : download_extra_data
+
+# fast build rule for target.
+download_extra_data/fast:
+	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
+.PHONY : download_extra_data/fast
+
+#=============================================================================
+# Target rules for targets named alb_ros_base
+
+# Build rule for target.
+alb_ros_base: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 alb_ros_base
 .PHONY : alb_ros_base
 
 # fast build rule for target.
 alb_ros_base/fast:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/build
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/build
 .PHONY : alb_ros_base/fast
 
-src/alb_ros_node.o: src/alb_ros_node.cpp.o
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
 
-.PHONY : src/alb_ros_node.o
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tests
+
+# Build rule for target.
+tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tests
+.PHONY : tests
+
+# fast build rule for target.
+tests/fast:
+	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
+.PHONY : tests/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f gtest/googlemock/gtest/CMakeFiles/gtest.dir/build.make gtest/googlemock/gtest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+src/alb_ros_node_handle.o: src/alb_ros_node_handle.cpp.o
+
+.PHONY : src/alb_ros_node_handle.o
 
 # target to build an object file
-src/alb_ros_node.cpp.o:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_node.cpp.o
-.PHONY : src/alb_ros_node.cpp.o
+src/alb_ros_node_handle.cpp.o:
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/src/alb_ros_node_handle.cpp.o
+.PHONY : src/alb_ros_node_handle.cpp.o
 
-src/alb_ros_node.i: src/alb_ros_node.cpp.i
+src/alb_ros_node_handle.i: src/alb_ros_node_handle.cpp.i
 
-.PHONY : src/alb_ros_node.i
+.PHONY : src/alb_ros_node_handle.i
 
 # target to preprocess a source file
-src/alb_ros_node.cpp.i:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_node.cpp.i
-.PHONY : src/alb_ros_node.cpp.i
+src/alb_ros_node_handle.cpp.i:
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/src/alb_ros_node_handle.cpp.i
+.PHONY : src/alb_ros_node_handle.cpp.i
 
-src/alb_ros_node.s: src/alb_ros_node.cpp.s
+src/alb_ros_node_handle.s: src/alb_ros_node_handle.cpp.s
 
-.PHONY : src/alb_ros_node.s
+.PHONY : src/alb_ros_node_handle.s
 
 # target to generate assembly for a file
-src/alb_ros_node.cpp.s:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_node.cpp.s
-.PHONY : src/alb_ros_node.cpp.s
+src/alb_ros_node_handle.cpp.s:
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/src/alb_ros_node_handle.cpp.s
+.PHONY : src/alb_ros_node_handle.cpp.s
 
-src/alb_ros_publisher.o: src/alb_ros_publisher.cpp.o
+src/alb_subscriber.o: src/alb_subscriber.cpp.o
 
-.PHONY : src/alb_ros_publisher.o
+.PHONY : src/alb_subscriber.o
 
 # target to build an object file
-src/alb_ros_publisher.cpp.o:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_publisher.cpp.o
-.PHONY : src/alb_ros_publisher.cpp.o
+src/alb_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/src/alb_subscriber.cpp.o
+.PHONY : src/alb_subscriber.cpp.o
 
-src/alb_ros_publisher.i: src/alb_ros_publisher.cpp.i
+src/alb_subscriber.i: src/alb_subscriber.cpp.i
 
-.PHONY : src/alb_ros_publisher.i
-
-# target to preprocess a source file
-src/alb_ros_publisher.cpp.i:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_publisher.cpp.i
-.PHONY : src/alb_ros_publisher.cpp.i
-
-src/alb_ros_publisher.s: src/alb_ros_publisher.cpp.s
-
-.PHONY : src/alb_ros_publisher.s
-
-# target to generate assembly for a file
-src/alb_ros_publisher.cpp.s:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_publisher.cpp.s
-.PHONY : src/alb_ros_publisher.cpp.s
-
-src/alb_ros_subscriber.o: src/alb_ros_subscriber.cpp.o
-
-.PHONY : src/alb_ros_subscriber.o
-
-# target to build an object file
-src/alb_ros_subscriber.cpp.o:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_subscriber.cpp.o
-.PHONY : src/alb_ros_subscriber.cpp.o
-
-src/alb_ros_subscriber.i: src/alb_ros_subscriber.cpp.i
-
-.PHONY : src/alb_ros_subscriber.i
+.PHONY : src/alb_subscriber.i
 
 # target to preprocess a source file
-src/alb_ros_subscriber.cpp.i:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_subscriber.cpp.i
-.PHONY : src/alb_ros_subscriber.cpp.i
+src/alb_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/src/alb_subscriber.cpp.i
+.PHONY : src/alb_subscriber.cpp.i
 
-src/alb_ros_subscriber.s: src/alb_ros_subscriber.cpp.s
+src/alb_subscriber.s: src/alb_subscriber.cpp.s
 
-.PHONY : src/alb_ros_subscriber.s
+.PHONY : src/alb_subscriber.s
 
 # target to generate assembly for a file
-src/alb_ros_subscriber.cpp.s:
-	cd /home/whymatter/github.com/albatross/ros/build && $(MAKE) -f alb_ros_base/CMakeFiles/alb_ros_base.dir/build.make alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_subscriber.cpp.s
-.PHONY : src/alb_ros_subscriber.cpp.s
+src/alb_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/alb_ros_base.dir/build.make CMakeFiles/alb_ros_base.dir/src/alb_subscriber.cpp.s
+.PHONY : src/alb_subscriber.cpp.s
 
 # Help Target
 help:
@@ -495,37 +553,43 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install/strip"
-	@echo "... install/local"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... list_install_components"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... roscpp_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... install/local"
+	@echo "... doxygen"
+	@echo "... clean_test_results"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... run_tests"
+	@echo "... download_extra_data"
+	@echo "... alb_ros_base"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... tests"
 	@echo "... edit_cache"
 	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... list_install_components"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... install"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... roscpp_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... alb_ros_base"
-	@echo "... src/alb_ros_node.o"
-	@echo "... src/alb_ros_node.i"
-	@echo "... src/alb_ros_node.s"
-	@echo "... src/alb_ros_publisher.o"
-	@echo "... src/alb_ros_publisher.i"
-	@echo "... src/alb_ros_publisher.s"
-	@echo "... src/alb_ros_subscriber.o"
-	@echo "... src/alb_ros_subscriber.i"
-	@echo "... src/alb_ros_subscriber.s"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... src/alb_ros_node_handle.o"
+	@echo "... src/alb_ros_node_handle.i"
+	@echo "... src/alb_ros_node_handle.s"
+	@echo "... src/alb_subscriber.o"
+	@echo "... src/alb_subscriber.i"
+	@echo "... src/alb_subscriber.s"
 .PHONY : help
 
 
@@ -537,6 +601,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/whymatter/github.com/albatross/ros/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

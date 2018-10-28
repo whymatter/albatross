@@ -1,0 +1,8 @@
+[33m[1mCMake Warning[0m at /home/whymatter/github.com/albatross/ros/src/cup_detector/CMakeLists.txt:29 (message):
+  third-party/darknet/src
+
+
+[33m[1mCMake Warning[0m at /home/whymatter/github.com/albatross/ros/src/cup_detector/CMakeLists.txt:30 (message):
+  /home/whymatter/github.com/albatross/ros/devel/.private/cup_detector
+
+

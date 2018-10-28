@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/setup.sh

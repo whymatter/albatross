@@ -1,0 +1,23 @@
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target _alb_ros_msgs_generate_messages_check_deps_BoundingBox
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target roscpp_generate_messages_eus
+[ 11%] Built target alb_ros_msgs_generate_messages_nodejs
+[ 11%] Built target roscpp_generate_messages_lisp
+[ 33%] Built target alb_ros_msgs_generate_messages_py
+[ 44%] Built target alb_ros_msgs_generate_messages_cpp
+[ 55%] Built target alb_ros_msgs_generate_messages_lisp
+[ 77%] Built target alb_ros_msgs_generate_messages_eus
+[100%] Built target alb_ros_msgs
+[100%] Built target alb_ros_msgs_generate_messages

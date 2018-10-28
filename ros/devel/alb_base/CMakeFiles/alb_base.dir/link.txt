@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libalb_base.so -o ../devel/lib/libalb_base.so  

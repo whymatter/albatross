@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -fPIC  
 
-CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"alb_ros_base\" -Dalb_ros_base_EXPORTS
+CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"alb_ros_base\" -Dalb_ros_base_EXPORTS
 
 CXX_INCLUDES = -I/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base -I/home/whymatter/github.com/albatross/ros/src/alb_base/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

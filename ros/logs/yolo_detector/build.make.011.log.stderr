@@ -1,0 +1,231 @@
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:11:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:8[m[K:
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h: In instantiation of ‘[01m[Ktypename T::Subscriber alb::base::AlbNode<T>::Subscribe(std::__cxx11::string, boost::function<void(P)>, uint32_t) [with T = alb::base::ros::AlbRosNodehandle; typename T::Subscriber = alb::base::ros::AlbRosSubscriber; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:31:17:[m[K   required from ‘[01m[Kalb::yolo_detector::CupDetectorNode<TNode>::CupDetectorNode(TNode&) [with TNode = alb::base::ros::AlbRosNodehandle][m[K’
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:14:105:[m[K   required from here
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h:42:91:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K(&((alb::base::AlbNode<alb::base::ros::AlbRosNodehandle>*)this)->alb::base::AlbNode<alb::base::ros::AlbRosNodehandle>::nodeHandle_)->alb::base::ros::AlbRosNodehandle::Subscribe<alb::base::ros::AlbRosNodehandle>(std::__cxx11::basic_string<char>(topicName), boost::function<void(alb::base::ros::AlbRosNodehandle)>(callback), queueSize)[m[K’ from ‘[01m[Kalb::base::AlbSubscriber[m[K’ to ‘[01m[Kalb::base::ros::AlbRosNodehandle::Subscriber {aka alb::base::ros::AlbRosSubscriber}[m[K’
+                 return this->nodeHandle_.template Subscribe(topicName, callback, queueSize[01;31m[K)[m[K;
+                                                                                           [01;31m[K^[m[K
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h: In instantiation of ‘[01m[Kalb::base::AlbSubscriber alb::base::ros::AlbRosNodehandle::Subscribe(std::__cxx11::string, boost::function<void(P)>, uint32_t) [with T = alb::base::ros::AlbRosNodehandle; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h:42:91:[m[K   required from ‘[01m[Ktypename T::Subscriber alb::base::AlbNode<T>::Subscribe(std::__cxx11::string, boost::function<void(P)>, uint32_t) [with T = alb::base::ros::AlbRosNodehandle; typename T::Subscriber = alb::base::ros::AlbRosSubscriber; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:31:17:[m[K   required from ‘[01m[Kalb::yolo_detector::CupDetectorNode<TNode>::CupDetectorNode(TNode&) [with TNode = alb::base::ros::AlbRosNodehandle][m[K’
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:14:105:[m[K   required from here
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kros::NodeHandle::subscribe(std::__cxx11::string&, uint32_t&, boost::function<void(alb::base::ros::AlbRosNodehandle)>&)[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;31m[K}[m[K;
+                                                                                                            [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M), T* obj,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:402:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M)[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const, T* obj,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:413:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M) const[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:465:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, T*, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:475:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M),
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:529:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M)[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(M) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(T::*fp)(M) const,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:540:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(M) const[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&), const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:594:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class T> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (T::*)(const boost::shared_ptr<const M>&) const, const boost::shared_ptr<U>&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:605:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (T::*)(const boost::shared_ptr<const M>&) const[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(M), const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(M), const TransportHints& transport_hints = TransportHints())
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:656:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(M)[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, void (*)(const boost::shared_ptr<const M>&), const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, void(*fp)(const boost::shared_ptr<M const>&), const TransportHints& transport_hints = TransportHints())
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:704:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kvoid (*)(const boost::shared_ptr<const M>&)[m[K’ and ‘[01m[Kboost::function<void(alb::base::ros::AlbRosNodehandle)>[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(const boost::shared_ptr<const M>&)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (const boost::shared_ptr<M const>&)>& callback,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:750:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst boost::shared_ptr<const M>&[m[K’ and ‘[01m[Kalb::base::ros::AlbRosNodehandle[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[Kcandidate: template<class M, class C> ros::Subscriber ros::NodeHandle::subscribe(const string&, uint32_t, const boost::function<void(C)>&, const VoidConstPtr&, const ros::TransportHints&)
+   Subscriber [01;36m[Ksubscribe[m[K(const std::string& topic, uint32_t queue_size, const boost::function<void (C)>& callback,
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:799:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;36m[Knote: [m[K  couldn't deduce template parameter ‘[01m[KM[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;36m[K}[m[K;
+                                                                                                            [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/melodic/include/ros/ros.h:45:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:836:14:[m[K [01;36m[Knote: [m[Kcandidate: ros::Subscriber ros::NodeHandle::subscribe(ros::SubscribeOptions&)
+   Subscriber [01;36m[Ksubscribe[m[K(SubscribeOptions& ops);
+              [01;36m[K^~~~~~~~~[m[K
+[01m[K/opt/ros/melodic/include/ros/node_handle.h:836:14:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 3 provided
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:34:108:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kalb::base::ros::AlbRosSubscriber::AlbRosSubscriber(<brace-enclosed initializer list>)[m[K’
+                     AlbRosSubscriber subscriber{this->nodeHandle_.subscribe(topicName, queueSize, callback)[01;31m[K}[m[K;
+                                                                                                            [01;31m[K^[m[K
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h:12:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:7[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:17:26:[m[K [01;36m[Knote: [m[Kcandidate: alb::base::ros::AlbRosSubscriber::AlbRosSubscriber(ros::Subscriber)
+                 explicit [01;36m[KAlbRosSubscriber[m[K(::ros::Subscriber subscriber);
+                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:17:26:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:15:19:[m[K [01;36m[Knote: [m[Kcandidate: alb::base::ros::AlbRosSubscriber::AlbRosSubscriber(const alb::base::ros::AlbRosSubscriber&)
+             class [01;36m[KAlbRosSubscriber[m[K : public ::alb::base::AlbSubscriber {
+                   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h:15:19:[m[K [01;36m[Knote: [m[K  conversion of argument 1 would be ill-formed:
+In file included from [01m[K/usr/include/boost/bind.hpp:22:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/publisher.h:35[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+/usr/include/boost/bind/bind.hpp: In instantiation of ‘[01m[Kvoid boost::_bi::list2<A1, A2>::operator()(boost::_bi::type<void>, F&, A&, int) [with F = boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >; A = boost::_bi::rrlist1<alb::base::ros::AlbRosNodehandle>; A1 = boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>; A2 = boost::arg<1>][m[K’:
+[01m[K/usr/include/boost/bind/bind.hpp:1306:50:[m[K   required from ‘[01m[Kboost::_bi::bind_t<R, F, L>::result_type boost::_bi::bind_t<R, F, L>::operator()(A1&&) [with A1 = alb::base::ros::AlbRosNodehandle; R = void; F = boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >; L = boost::_bi::list2<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, boost::arg<1> >; boost::_bi::bind_t<R, F, L>::result_type = void][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:159:11:[m[K   required from ‘[01m[Kstatic void boost::detail::function::void_function_obj_invoker1<FunctionObj, R, T0>::invoke(boost::detail::function::function_buffer&, T0) [with FunctionObj = boost::_bi::bind_t<void, boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >, boost::_bi::list2<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, boost::arg<1> > >; R = void; T0 = alb::base::ros::AlbRosNodehandle][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:925:38:[m[K   required from ‘[01m[Kvoid boost::function1<R, T1>::assign_to(Functor) [with Functor = boost::_bi::bind_t<void, boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >, boost::_bi::list2<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, boost::arg<1> > >; R = void; T0 = alb::base::ros::AlbRosNodehandle][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:716:7:[m[K   required from ‘[01m[Kboost::function1<R, T1>::function1(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = boost::_bi::bind_t<void, boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >, boost::_bi::list2<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, boost::arg<1> > >; R = void; T0 = alb::base::ros::AlbRosNodehandle; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/usr/include/boost/function/function_template.hpp:1061:16:[m[K   required from ‘[01m[Kboost::function<R(T0)>::function(Functor, typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type) [with Functor = boost::_bi::bind_t<void, boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >, boost::_bi::list2<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, boost::arg<1> > >; R = void; T0 = alb::base::ros::AlbRosNodehandle; typename boost::enable_if_c<(! boost::is_integral<Functor>::value), int>::type = int][m[K’
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:31:17:[m[K   required from ‘[01m[Kalb::yolo_detector::CupDetectorNode<TNode>::CupDetectorNode(TNode&) [with TNode = alb::base::ros::AlbRosNodehandle][m[K’
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:14:105:[m[K   required from here
+[01m[K/usr/include/boost/bind/bind.hpp:319:35:[m[K [01;31m[Kerror: [m[Kno match for call to ‘[01m[K(boost::_mfi::mf1<void, alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>, sensor_msgs::Image_<std::allocator<void> > >) (alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*&, alb::base::ros::AlbRosNodehandle)[m[K’
+         [01;31m[Kunwrapper<F>::unwrap(f, 0)(a[base_type::a1_], a[base_type::a2_])[m[K;
+         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/bind/mem_fn.hpp:215:0[m[K,
+                 from [01m[K/usr/include/boost/mem_fn.hpp:22[m[K,
+                 from [01m[K/usr/include/boost/function/detail/prologue.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:24[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:163:7:[m[K [01;36m[Knote: [m[Kcandidate: R boost::_mfi::mf1<R, T, A1>::operator()(T*, A1) const [with R = void; T = alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>; A1 = sensor_msgs::Image_<std::allocator<void> >]
+     R [01;36m[Koperator[m[K()(T * p, A1 a1) const
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:163:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kalb::base::ros::AlbRosNodehandle[m[K’ to ‘[01m[Ksensor_msgs::Image_<std::allocator<void> >[m[K’
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:168:25:[m[K [01;36m[Knote: [m[Kcandidate: template<class U> R boost::_mfi::mf1<R, T, A1>::operator()(U&, A1) const [with U = U; R = void; T = alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>; A1 = sensor_msgs::Image_<std::allocator<void> >]
+     template<class U> R [01;36m[Koperator[m[K()(U & u, A1 a1) const
+                         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:168:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/boost/bind.hpp:22:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/publisher.h:35[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/usr/include/boost/bind/bind.hpp:319:35:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K(& a)->boost::_bi::rrlist1<A1>::operator[]<alb::base::ros::AlbRosNodehandle>(boost::_bi::storage2<A1, boost::arg<I> >::a2_<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, 1>)[m[K’ (type ‘[01m[Kalb::base::ros::AlbRosNodehandle[m[K’) to type ‘[01m[Ksensor_msgs::Image_<std::allocator<void> >[m[K’
+         [01;36m[Kunwrapper<F>::unwrap(f, 0)(a[base_type::a1_], a[base_type::a2_])[m[K;
+         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/bind/mem_fn.hpp:215:0[m[K,
+                 from [01m[K/usr/include/boost/mem_fn.hpp:22[m[K,
+                 from [01m[K/usr/include/boost/function/detail/prologue.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:24[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:176:25:[m[K [01;36m[Knote: [m[Kcandidate: template<class U> R boost::_mfi::mf1<R, T, A1>::operator()(const U&, A1) const [with U = U; R = void; T = alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>; A1 = sensor_msgs::Image_<std::allocator<void> >]
+     template<class U> R [01;36m[Koperator[m[K()(U const & u, A1 a1) const
+                         [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:176:25:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/boost/bind.hpp:22:0[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/publisher.h:35[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/usr/include/boost/bind/bind.hpp:319:35:[m[K [01;36m[Knote: [m[K  cannot convert ‘[01m[K(& a)->boost::_bi::rrlist1<A1>::operator[]<alb::base::ros::AlbRosNodehandle>(boost::_bi::storage2<A1, boost::arg<I> >::a2_<boost::_bi::value<alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*>, 1>)[m[K’ (type ‘[01m[Kalb::base::ros::AlbRosNodehandle[m[K’) to type ‘[01m[Ksensor_msgs::Image_<std::allocator<void> >[m[K’
+         [01;36m[Kunwrapper<F>::unwrap(f, 0)(a[base_type::a1_], a[base_type::a2_])[m[K;
+         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/boost/bind/mem_fn.hpp:215:0[m[K,
+                 from [01m[K/usr/include/boost/mem_fn.hpp:22[m[K,
+                 from [01m[K/usr/include/boost/function/detail/prologue.hpp:18[m[K,
+                 from [01m[K/usr/include/boost/function.hpp:24[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/forwards.h:40[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/melodic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:5[m[K:
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:184:7:[m[K [01;36m[Knote: [m[Kcandidate: R boost::_mfi::mf1<R, T, A1>::operator()(T&, A1) const [with R = void; T = alb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>; A1 = sensor_msgs::Image_<std::allocator<void> >]
+     R [01;36m[Koperator[m[K()(T & t, A1 a1) const
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/boost/bind/mem_fn_template.hpp:184:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kalb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>*[m[K’ to ‘[01m[Kalb::yolo_detector::CupDetectorNode<alb::base::ros::AlbRosNodehandle>&[m[K’
+make[2]: *** [CMakeFiles/yolo_detector.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/yolo_detector.dir/all] Error 2
+make: *** [all] Error 2

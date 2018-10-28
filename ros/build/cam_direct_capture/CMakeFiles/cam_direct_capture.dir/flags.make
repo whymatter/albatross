@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS =  
 
-CXX_DEFINES = -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"cam_direct_capture\"
+CXX_DEFINES = -DOPENCV_TRAITS_ENABLE_DEPRECATED -DROSCONSOLE_BACKEND_LOG4CXX -DROS_PACKAGE_NAME=\"cam_direct_capture\"
 
-CXX_INCLUDES = -I/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture -I/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include -I/home/whymatter/github.com/albatross/ros/src/alb_base/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/local/include -isystem /usr/local/include/opencv -I/usr/include/opencv 
+CXX_INCLUDES = -I/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture -I/home/whymatter/github.com/albatross/ros/src/alb_base/include -I/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -isystem /usr/local/include -isystem /usr/local/include/opencv -I/usr/include/opencv 
 

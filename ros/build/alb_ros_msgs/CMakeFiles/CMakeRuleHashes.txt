@@ -1,0 +1,21 @@
+# Hashes of file build rules.
+6487ba65f1d7cf90f7ad21ec567a123b /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/include/alb_ros_msgs/BoundingBox.h
+39aadab3195b7e8ac518e39c4847a036 /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/include/alb_ros_msgs/CamDetection.h
+ed12ff25af04f60e3829ac0cb08ed411 /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/lib/python2.7/dist-packages/alb_ros_msgs/msg/_BoundingBox.py
+bc391a040262000613bcd0b625c35c0f /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/lib/python2.7/dist-packages/alb_ros_msgs/msg/_CamDetection.py
+6dbd8a9e77bc9145b0e7deb928aee8f2 /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/lib/python2.7/dist-packages/alb_ros_msgs/msg/__init__.py
+5b037afbb065022a186acd6f0b3edf8e /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/common-lisp/ros/alb_ros_msgs/msg/BoundingBox.lisp
+35e26933b12a4075c9eec2f6ad501125 /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/common-lisp/ros/alb_ros_msgs/msg/CamDetection.lisp
+a432ff4624fe9b5023aecea3a1f1ab3e /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/gennodejs/ros/alb_ros_msgs/msg/BoundingBox.js
+e02c18451a1a100f4b33f607f468b678 /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/gennodejs/ros/alb_ros_msgs/msg/CamDetection.js
+76319055e9285b87402a2772243998ac /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/roseus/ros/alb_ros_msgs/manifest.l
+0ef670a533ff01c60b8ec9181bf3911d /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/roseus/ros/alb_ros_msgs/msg/BoundingBox.l
+9ce3517c92ea4a31d9c9c6a48c2645ad /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/roseus/ros/alb_ros_msgs/msg/CamDetection.l
+3e2b399ec3f3c139a2dd97447e7acde6 CMakeFiles/_alb_ros_msgs_generate_messages_check_deps_BoundingBox
+feb6177a510e029d0613a4acb7a0611e CMakeFiles/_alb_ros_msgs_generate_messages_check_deps_CamDetection
+30e27b7960e67f9b667b1f90c6431e1f CMakeFiles/alb_ros_msgs_generate_messages_cpp
+30e27b7960e67f9b667b1f90c6431e1f CMakeFiles/alb_ros_msgs_generate_messages_eus
+30e27b7960e67f9b667b1f90c6431e1f CMakeFiles/alb_ros_msgs_generate_messages_lisp
+30e27b7960e67f9b667b1f90c6431e1f CMakeFiles/alb_ros_msgs_generate_messages_nodejs
+30e27b7960e67f9b667b1f90c6431e1f CMakeFiles/alb_ros_msgs_generate_messages_py
+7eda5206f37d0b222a27042f94ba6ec9 CMakeFiles/clean_test_results

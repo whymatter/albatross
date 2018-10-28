@@ -1,0 +1,8 @@
+prefix=/home/whymatter/github.com/albatross/ros/devel/devel
+
+Name: alb_ros_msgs
+Description: Description of alb_ros_msgs
+Version: 1.2.4
+Cflags: -I/home/whymatter/github.com/albatross/ros/devel/devel/include -I/home/whymatter/github.com/albatross/ros/src/alb_ros_msgs/include
+Libs: -L/home/whymatter/github.com/albatross/ros/devel/devel/lib 
+Requires: message_runtime

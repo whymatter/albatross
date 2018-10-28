@@ -1,8 +1,1 @@
-prefix=/home/whymatter/github.com/albatross/ros/devel
-
-Name: cam
-Description: Description of cam
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/whymatter/github.com/albatross/ros/devel/lib 
-Requires: 
+/home/whymatter/github.com/albatross/ros/devel/.private/cam/lib/pkgconfig/cam.pc

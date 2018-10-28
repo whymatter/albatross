@@ -1,0 +1,8 @@
+prefix=/home/whymatter/github.com/albatross/ros/install
+
+Name: static_environment
+Description: Description of static_environment
+Version: 1.2.4
+Cflags: -I/home/whymatter/github.com/albatross/ros/install/include
+Libs: -L/home/whymatter/github.com/albatross/ros/install/lib 
+Requires: alb_ros_base std_msgs

@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/whymatter/github.com/albatross/ros/src/
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lalb_base".split(';') if "-lalb_base" != "" else []
 PROJECT_NAME = "alb_base"
-PROJECT_SPACE_DIR = "/home/whymatter/github.com/albatross/ros/devel"
+PROJECT_SPACE_DIR = "/home/whymatter/github.com/albatross/ros/devel/.private/alb_base"
 PROJECT_VERSION = "1.2.4"

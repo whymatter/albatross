@@ -1,0 +1,12 @@
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/static_environment/src/main.cpp:7:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/static_environment/include/static_environment/static_environment_node.h:[m[K In constructor ‘[01m[Kalb::static_environment::StaticEnvironmentNode<TNode>::StaticEnvironmentNode(TNode&)[m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/static_environment/include/static_environment/static_environment_node.h:15:70:[m[K [01;31m[Kerror: [m[K‘[01m[Ktemplate<class T> class alb::base::AlbNode[m[K’ used without template parameters
+       explicit StaticEnvironmentNode(TNode& nodeHandle) : alb::base::[01;31m[KAlbNode[m[K::template <TNode>(nodeHandle) {
+                                                                      [01;31m[K^~~~~~~[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/static_environment/include/static_environment/static_environment_node.h:15:88:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K<[m[K’ token
+       explicit StaticEnvironmentNode(TNode& nodeHandle) : alb::base::AlbNode::template [01;31m[K<[m[KTNode>(nodeHandle) {
+                                                                                        [01;31m[K^[m[K
+[01m[K/home/whymatter/github.com/albatross/ros/src/static_environment/include/static_environment/static_environment_node.h:15:88:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[K<[m[K’ token
+make[2]: *** [CMakeFiles/static_environment.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/static_environment.dir/all] Error 2
+make: *** [all] Error 2

@@ -1,0 +1,5 @@
+static_environment
+/home/whymatter/github.com/albatross/ros/devel/.private/static_environment/lib/static_environment/static_environment /home/whymatter/github.com/albatross/ros/devel/lib/static_environment/static_environment
+/home/whymatter/github.com/albatross/ros/devel/.private/static_environment/lib/pkgconfig/static_environment.pc /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/static_environment.pc
+/home/whymatter/github.com/albatross/ros/devel/.private/static_environment/share/static_environment/cmake/static_environmentConfig-version.cmake /home/whymatter/github.com/albatross/ros/devel/share/static_environment/cmake/static_environmentConfig-version.cmake
+/home/whymatter/github.com/albatross/ros/devel/.private/static_environment/share/static_environment/cmake/static_environmentConfig.cmake /home/whymatter/github.com/albatross/ros/devel/share/static_environment/cmake/static_environmentConfig.cmake

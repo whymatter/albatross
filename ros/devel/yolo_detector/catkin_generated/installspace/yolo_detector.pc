@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: yolo_detector
+Description: Description of yolo_detector
+Version: 1.2.4
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: alb_ros_base image_transport std_msgs sensor_msgs cv_bridge

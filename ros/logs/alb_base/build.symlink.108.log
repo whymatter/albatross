@@ -1,0 +1,4 @@
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/libalb_base.so
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/alb_base.pc
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/alb_base/cmake/alb_baseConfig-version.cmake
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/alb_base/cmake/alb_baseConfig.cmake

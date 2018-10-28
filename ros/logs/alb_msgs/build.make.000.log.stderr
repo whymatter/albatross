@@ -1,0 +1,5 @@
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+make[2]: *** [/home/whymatter/github.com/albatross/ros/devel/.private/alb_msgs/lib/alb_msgs/alb_msgs] Error 1
+make[1]: *** [CMakeFiles/alb_msgs.dir/all] Error 2
+make: *** [all] Error 2

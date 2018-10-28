@@ -1,0 +1,1 @@
+/home/whymatter/github.com/albatross/ros/devel/.private/yolo_detector/lib/pkgconfig/yolo_detector.pc

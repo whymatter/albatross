@@ -8,25 +8,40 @@
 #include <ros/ros.h>
 #include <boost/shared_ptr.hpp>
 
+#include "alb_base/alb_publisher.h"
+
 namespace alb {
     namespace base {
         namespace ros {
-            class AlbRosPublisher {
+            template<class M>
+            class AlbRosPublisher : public alb::base::AlbPublisher<M> {
             public:
                 explicit AlbRosPublisher() = default;
 
-                AlbRosPublisher(::ros::Publisher publisher);
+                explicit AlbRosPublisher(::ros::Publisher &publisher)
+                        : publisher_{publisher} {
 
-                AlbRosPublisher(const AlbRosPublisher &other); // think about it first
-                ~AlbRosPublisher();
+                }
 
-                template<class M>
-                void publish(const M &message) {
+                explicit AlbRosPublisher(::ros::Publisher &&publisher)
+                        : publisher_{publisher} {
+
+                }
+
+                AlbRosPublisher(const AlbRosPublisher &other)
+                        : publisher_{other.publisher_} {
+
+                }
+
+                ~AlbRosPublisher() {
+                    // do not destroy publisher
+                }
+
+                void Publish(const M &message) override {
                     this->publisher_.publish(message);
                 }
 
-                template<class M>
-                void publish(const ::boost::shared_ptr<M> &message) {
+                void Publish(const ::boost::shared_ptr<M> &message) override {
                     this->publisher_.publish(message);
                 }
 

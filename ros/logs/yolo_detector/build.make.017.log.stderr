@@ -1,0 +1,11 @@
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:11:0[m[K,
+                 from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:8[m[K:
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h: In instantiation of ‘[01m[Ktypename T::Subscriber alb::base::AlbNode<T>::Subscribe(std::__cxx11::string, const boost::function<void(const boost::shared_ptr<const M>&)>&, uint32_t) [with M = cv_bridge::CvImage; T = alb::base::ros::AlbRosNodehandle; typename T::Subscriber = alb::base::ros::AlbRosSubscriber; std::__cxx11::string = std::__cxx11::basic_string<char>; uint32_t = unsigned int][m[K’:
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:33:17:[m[K   required from ‘[01m[Kalb::yolo_detector::CupDetectorNode<TNode>::CupDetectorNode(TNode&) [with TNode = alb::base::ros::AlbRosNodehandle][m[K’
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:14:105:[m[K   required from here
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h:43:94:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[K(&((alb::base::AlbNode<alb::base::ros::AlbRosNodehandle>*)this)->alb::base::AlbNode<alb::base::ros::AlbRosNodehandle>::nodeHandle_)->alb::base::ros::AlbRosNodehandle::Subscribe<cv_bridge::CvImage>(std::__cxx11::basic_string<char>(topicName), (* & callback), queueSize)[m[K’ from ‘[01m[Kalb::base::AlbSubscriber[m[K’ to ‘[01m[Kalb::base::ros::AlbRosNodehandle::Subscriber {aka alb::base::ros::AlbRosSubscriber}[m[K’
+                 return this->nodeHandle_.template Subscribe<M>(topicName, callback, queueSize[01;31m[K)[m[K;
+                                                                                              [01;31m[K^[m[K
+make[2]: *** [CMakeFiles/yolo_detector.dir/src/main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/yolo_detector.dir/all] Error 2
+make: *** [all] Error 2

@@ -7,14 +7,28 @@
 
 #include <ros/ros.h>
 
+#include "alb_base/alb_subscriber.h"
+
 namespace alb {
     namespace base {
         namespace ros {
-            class AlbRosSubscriber {
+            class AlbRosSubscriber : public ::alb::base::AlbSubscriber {
             public:
-                explicit AlbRosSubscriber(::ros::Subscriber subscriber);
+                explicit AlbRosSubscriber(::ros::Subscriber &subscriber)
+                        : subscriber_{subscriber} {
 
-                ~AlbRosSubscriber();
+                }
+
+                explicit AlbRosSubscriber(::ros::Subscriber &&subscriber);
+
+                AlbRosSubscriber(const AlbRosSubscriber &other)
+                        : subscriber_{other.subscriber_} {
+
+                }
+
+                ~AlbRosSubscriber() {
+                    // do not destroy publisher
+                }
 
             private:
                 ::ros::Subscriber subscriber_;

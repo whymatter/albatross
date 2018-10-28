@@ -1,0 +1,8 @@
+[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:8:31:[m[K [01;31m[Kfatal error: [m[Kcup_detector_node.h: No such file or directory
+ #include "cup_detector_node.h"
+                               [01;31m[K^[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/yolo_detector.dir/src/main.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/yolo_detector.dir/all] Error 2
+make: *** [all] Error 2

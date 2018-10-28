@@ -1,0 +1,17 @@
+<package format="2">
+    <name>yolo_detector</name>
+    <version>1.2.4</version>
+    <description>
+        This package provides foo capability.
+    </description>
+    <maintainer email="seitz-oliver@gmx.de">Oliver Seitz</maintainer>
+    <license>BSD</license>
+
+    <depend>alb_ros_base</depend>
+    <depend>image_transport</depend>
+    <depend>std_msgs</depend>
+    <depend>sensor_msgs</depend>
+    <depend>cv_bridge</depend>
+
+    <buildtool_depend>catkin</buildtool_depend>
+</package>

@@ -68,7 +68,7 @@ set(alb_ros_base_CONFIG_INCLUDED TRUE)
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
   set(alb_ros_base_SOURCE_PREFIX /home/whymatter/github.com/albatross/ros/src/alb_ros_base)
-  set(alb_ros_base_DEVEL_PREFIX /home/whymatter/github.com/albatross/ros/devel)
+  set(alb_ros_base_DEVEL_PREFIX /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_base)
   set(alb_ros_base_INSTALL_PREFIX "")
   set(alb_ros_base_PREFIX ${alb_ros_base_DEVEL_PREFIX})
 else()
@@ -129,7 +129,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/whymatter/github.com/albatross/ros/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/whymatter/github.com/albatross/ros/install/lib;/home/whymatter/github.com/albatross/ros/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -160,7 +160,7 @@ foreach(t ${alb_ros_base_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "alb_base")
+set(depends "alb_base;roscpp")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

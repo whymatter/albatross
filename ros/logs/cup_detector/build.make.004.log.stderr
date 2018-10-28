@@ -1,0 +1,7 @@
+[01m[K/home/whymatter/github.com/albatross/ros/src/cup_detector/src/darknet_main.cpp:11:63:[m[K [01;31m[Kfatal error: [m[Kyolo_v2_class.hpp: No such file or directory
+ #include "yolo_v2_class.hpp"    // imported functions from DLL
+                                                               [01;31m[K^[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/cup_detector.dir/src/darknet_main.cpp.o] Error 1
+make[1]: *** [CMakeFiles/cup_detector.dir/all] Error 2
+make: *** [all] Error 2

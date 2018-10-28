@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f1b89/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f1b89.dir/build.make CMakeFiles/cmTC_f1b89.dir/build
+make[1]: Entering directory '/home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1b89.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_f1b89.dir/CheckSymbolExists.c.o   -c /home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_f1b89
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1b89.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_f1b89.dir/CheckSymbolExists.c.o  -o cmTC_f1b89 
+CMakeFiles/cmTC_f1b89.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f1b89.dir/build.make:97: recipe for target 'cmTC_f1b89' failed
+make[1]: *** [cmTC_f1b89] Error 1
+make[1]: Leaving directory '/home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f1b89/fast' failed
+make: *** [cmTC_f1b89/fast] Error 2
+
+File /home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_14490/fast"
+/usr/bin/make -f CMakeFiles/cmTC_14490.dir/build.make CMakeFiles/cmTC_14490.dir/build
+make[1]: Entering directory '/home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14490.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_14490.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_14490
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14490.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_14490.dir/CheckFunctionExists.c.o  -o cmTC_14490 -lpthreads 
+/usr/bin/x86_64-linux-gnu-ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_14490.dir/build.make:97: recipe for target 'cmTC_14490' failed
+make[1]: *** [cmTC_14490] Error 1
+make[1]: Leaving directory '/home/whymatter/github.com/albatross/ros/build/alb_ros_msgs/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_14490/fast' failed
+make: *** [cmTC_14490/fast] Error 2
+
+

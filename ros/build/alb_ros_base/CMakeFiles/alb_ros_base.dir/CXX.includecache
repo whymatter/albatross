@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_node.h
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_publisher.h
+boost/shared_ptr.hpp
+-
 
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node.h
-ros/ros.h
--
-functional
--
-vector
--
+/home/whymatter/github.com/albatross/ros/src/alb_base/include/alb_base/alb_subscriber.h
+
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_node_handle.h
 string
 -
-alb_base/alb_node.h
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_base/alb_node.h
+boost/function.hpp
+-
+ros/ros.h
+-
 alb_ros_subscriber.h
 /home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h
 alb_ros_publisher.h
@@ -29,22 +29,20 @@ ros/ros.h
 -
 boost/shared_ptr.hpp
 -
+alb_base/alb_publisher.h
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_base/alb_publisher.h
 
 /home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_ros_subscriber.h
 ros/ros.h
 -
+alb_base/alb_subscriber.h
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include/alb_ros_base/alb_base/alb_subscriber.h
 
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node.cpp
-utility
--
-alb_ros_node.h
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node.h
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node_handle.cpp
+alb_ros_node_handle.h
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node_handle.h
 
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_publisher.cpp
-alb_ros_publisher.h
--
-
-/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_subscriber.cpp
+/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_subscriber.cpp
 alb_ros_subscriber.h
 -
 

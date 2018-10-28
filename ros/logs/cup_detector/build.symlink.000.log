@@ -1,0 +1,4 @@
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/cup_detector.pc
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/cup_detector/cup_detector
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/cup_detector/cmake/cup_detectorConfig-version.cmake
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/cup_detector/cmake/cup_detectorConfig.cmake

@@ -17,18 +17,8 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/alb_base)
 add_library(
         ${PROJECT_NAME}
         include/alb_base/alb_node.h
-        src/alb_node.cpp
+        include/alb_base/alb_publisher.h
+        include/alb_base/alb_subscriber.h
 )
 add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
-
-#target_include_directories(
-#        ${PROJECT_NAME}
-#        PUBLIC
-#        ${CMAKE_SOURCE_DIR}/include/
-#        PRIVATE
-#        ${CMAKE_SOURCE_DIR}/include/alb_base
-#)
-#
-#target_link_libraries(
-#        ${PROJECT_NAME}
-#)
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)

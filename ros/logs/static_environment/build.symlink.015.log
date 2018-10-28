@@ -1,0 +1,4 @@
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/static_environment/static_environment
+Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/static_environment.pc
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/static_environment/cmake/static_environmentConfig-version.cmake
+Symlinking /home/whymatter/github.com/albatross/ros/devel/share/static_environment/cmake/static_environmentConfig.cmake

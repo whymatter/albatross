@@ -20,7 +20,8 @@ namespace alb {
                 bool success = this->videoCapture_.open(this->camera_index_);
                 if (success) {
                     this->videoCapture_.set(CV_CAP_PROP_FRAME_WIDTH, 640);
-                    this->videoCapture_.set(CV_CAP_PROP_FRAME_HEIGHT, 480);
+                    this->videoCapture_.set(CV_CAP_PROP_FRAME_HEIGHT, 360);
+                    this->videoCapture_.set(CV_CAP_PROP_FPS, 24);
                 }
 
                 return success;

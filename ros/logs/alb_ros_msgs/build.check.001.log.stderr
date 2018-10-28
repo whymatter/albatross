@@ -1,0 +1,9 @@
+[33m[1mCMake Warning[0m at /home/whymatter/github.com/albatross/ros/src/alb_ros_msgs/CMakeLists.txt:39 (message):
+  include/alb_ros_msgs
+
+
+[33m[1mCMake Warning[0m at /home/whymatter/github.com/albatross/ros/src/alb_ros_msgs/CMakeLists.txt:40 (message):
+
+  /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/include/alb_ros_msgs
+
+

@@ -1,0 +1,8 @@
+In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_msgs/src/bounding_box_converter.cpp:5:0[m[K:
+[01m[K/home/whymatter/github.com/albatross/ros/src/alb_ros_msgs/include/alb_ros_msgs/bounding_box_converter.h:9:17:[m[K [01;31m[Kfatal error: [m[KBound: No such file or directory
+ #include "Bound"
+                 [01;31m[K^[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/alb_ros_msgs.dir/src/bounding_box_converter.cpp.o] Error 1
+make[1]: *** [CMakeFiles/alb_ros_msgs.dir/all] Error 2
+make: *** [all] Error 2

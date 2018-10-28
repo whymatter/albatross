@@ -43,90 +43,90 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/whymatter/github.com/albatross/ros/src
+CMAKE_SOURCE_DIR = /home/whymatter/github.com/albatross/ros/src/cam_direct_capture
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/whymatter/github.com/albatross/ros/build
+CMAKE_BINARY_DIR = /home/whymatter/github.com/albatross/ros/build/cam_direct_capture
 
 # Include any dependencies generated for this target.
-include cam_direct_capture/CMakeFiles/cam_direct_capture.dir/depend.make
+include CMakeFiles/cam_direct_capture.dir/depend.make
 
 # Include the progress variables for this target.
-include cam_direct_capture/CMakeFiles/cam_direct_capture.dir/progress.make
+include CMakeFiles/cam_direct_capture.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include cam_direct_capture/CMakeFiles/cam_direct_capture.dir/flags.make
+include CMakeFiles/cam_direct_capture.dir/flags.make
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/flags.make
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o: /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/whymatter/github.com/albatross/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o -c /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o: CMakeFiles/cam_direct_capture.dir/flags.make
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o: /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/whymatter/github.com/albatross/ros/build/cam_direct_capture/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o -c /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.i: cmake_force
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.i"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp > CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp > CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.i
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.s: cmake_force
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.s"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp -o CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/cam_direct_capture_node.cpp -o CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.s
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires:
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires:
 
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires
+.PHONY : CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires
-	$(MAKE) -f cam_direct_capture/CMakeFiles/cam_direct_capture.dir/build.make cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides.build
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides: CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cam_direct_capture.dir/build.make CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides.build
+.PHONY : CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides.build: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o
+CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.provides.build: CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o
 
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/flags.make
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o: /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/whymatter/github.com/albatross/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o -c /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o: CMakeFiles/cam_direct_capture.dir/flags.make
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o: /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/whymatter/github.com/albatross/ros/build/cam_direct_capture/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o -c /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.i: cmake_force
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.i"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp > CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp > CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.i
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.s: cmake_force
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.s"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp -o CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/opencv_video_capturer.cpp -o CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.s
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires:
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires:
 
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires
+.PHONY : CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires
-	$(MAKE) -f cam_direct_capture/CMakeFiles/cam_direct_capture.dir/build.make cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides.build
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides: CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cam_direct_capture.dir/build.make CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides.build
+.PHONY : CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides.build: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o
+CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.provides.build: CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o
 
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/flags.make
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o: /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/whymatter/github.com/albatross/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_direct_capture.dir/src/main.cpp.o -c /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.o: CMakeFiles/cam_direct_capture.dir/flags.make
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.o: /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/whymatter/github.com/albatross/ros/build/cam_direct_capture/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cam_direct_capture.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cam_direct_capture.dir/src/main.cpp.o -c /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.i: cmake_force
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cam_direct_capture.dir/src/main.cpp.i"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp > CMakeFiles/cam_direct_capture.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp > CMakeFiles/cam_direct_capture.dir/src/main.cpp.i
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.s: cmake_force
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cam_direct_capture.dir/src/main.cpp.s"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp -o CMakeFiles/cam_direct_capture.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/whymatter/github.com/albatross/ros/src/cam_direct_capture/src/main.cpp -o CMakeFiles/cam_direct_capture.dir/src/main.cpp.s
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires:
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires:
 
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires
+.PHONY : CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires
-	$(MAKE) -f cam_direct_capture/CMakeFiles/cam_direct_capture.dir/build.make cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides.build
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides: CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cam_direct_capture.dir/build.make CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides.build
+.PHONY : CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides.build: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o
+CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.provides.build: CMakeFiles/cam_direct_capture.dir/src/main.cpp.o
 
 
 # Object files for target cam_direct_capture
@@ -138,85 +138,85 @@ cam_direct_capture_OBJECTS = \
 # External object files for target cam_direct_capture
 cam_direct_capture_EXTERNAL_OBJECTS =
 
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/build.make
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libroscpp.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /home/whymatter/github.com/albatross/ros/devel/lib/libalb_ros_base.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /home/whymatter/github.com/albatross/ros/devel/lib/libalb_base.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudabgsegm.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaobjdetect.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudastereo.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_dnn.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_ml.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_shape.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_stitching.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_superres.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_videostab.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_viz.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libcv_bridge.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librosconsole.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librostime.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libcpp_common.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudafeatures2d.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudacodec.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaoptflow.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudalegacy.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_calib3d.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudawarping.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_features2d.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_flann.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_highgui.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_objdetect.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_photo.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaimgproc.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudafilters.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaarithm.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_video.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_videoio.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_imgcodecs.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_imgproc.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_core.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudev.so.3.4.0
-/home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/whymatter/github.com/albatross/ros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture"
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cam_direct_capture.dir/link.txt --verbose=$(VERBOSE)
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: CMakeFiles/cam_direct_capture.dir/src/main.cpp.o
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: CMakeFiles/cam_direct_capture.dir/build.make
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_base/lib/libalb_ros_base.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /home/whymatter/github.com/albatross/ros/devel/.private/alb_base/lib/libalb_base.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libroscpp.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudabgsegm.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaobjdetect.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudastereo.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_dnn.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_ml.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_shape.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_stitching.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_superres.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_videostab.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_viz.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libcv_bridge.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librosconsole.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/librostime.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /opt/ros/melodic/lib/libcpp_common.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudafeatures2d.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudacodec.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaoptflow.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudalegacy.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_calib3d.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudawarping.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_features2d.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_flann.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_highgui.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_objdetect.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_photo.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaimgproc.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudafilters.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudaarithm.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_video.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_videoio.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_imgcodecs.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_imgproc.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_core.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: /usr/local/lib/libopencv_cudev.so.3.4.0
+/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture: CMakeFiles/cam_direct_capture.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/whymatter/github.com/albatross/ros/build/cam_direct_capture/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable /home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture"
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cam_direct_capture.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/build: /home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture
+CMakeFiles/cam_direct_capture.dir/build: /home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture
 
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/build
+.PHONY : CMakeFiles/cam_direct_capture.dir/build
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/requires: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/requires: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/requires: cam_direct_capture/CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires
+CMakeFiles/cam_direct_capture.dir/requires: CMakeFiles/cam_direct_capture.dir/src/cam_direct_capture_node.cpp.o.requires
+CMakeFiles/cam_direct_capture.dir/requires: CMakeFiles/cam_direct_capture.dir/src/opencv_video_capturer.cpp.o.requires
+CMakeFiles/cam_direct_capture.dir/requires: CMakeFiles/cam_direct_capture.dir/src/main.cpp.o.requires
 
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/requires
+.PHONY : CMakeFiles/cam_direct_capture.dir/requires
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/clean:
-	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && $(CMAKE_COMMAND) -P CMakeFiles/cam_direct_capture.dir/cmake_clean.cmake
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/clean
+CMakeFiles/cam_direct_capture.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles/cam_direct_capture.dir/cmake_clean.cmake
+.PHONY : CMakeFiles/cam_direct_capture.dir/clean
 
-cam_direct_capture/CMakeFiles/cam_direct_capture.dir/depend:
-	cd /home/whymatter/github.com/albatross/ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/whymatter/github.com/albatross/ros/src /home/whymatter/github.com/albatross/ros/src/cam_direct_capture /home/whymatter/github.com/albatross/ros/build /home/whymatter/github.com/albatross/ros/build/cam_direct_capture /home/whymatter/github.com/albatross/ros/build/cam_direct_capture/CMakeFiles/cam_direct_capture.dir/DependInfo.cmake --color=$(COLOR)
-.PHONY : cam_direct_capture/CMakeFiles/cam_direct_capture.dir/depend
+CMakeFiles/cam_direct_capture.dir/depend:
+	cd /home/whymatter/github.com/albatross/ros/build/cam_direct_capture && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/whymatter/github.com/albatross/ros/src/cam_direct_capture /home/whymatter/github.com/albatross/ros/src/cam_direct_capture /home/whymatter/github.com/albatross/ros/build/cam_direct_capture /home/whymatter/github.com/albatross/ros/build/cam_direct_capture /home/whymatter/github.com/albatross/ros/build/cam_direct_capture/CMakeFiles/cam_direct_capture.dir/DependInfo.cmake --color=$(COLOR)
+.PHONY : CMakeFiles/cam_direct_capture.dir/depend
 

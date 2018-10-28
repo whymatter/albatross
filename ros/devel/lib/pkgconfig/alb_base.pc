@@ -1,8 +1,1 @@
-prefix=/home/whymatter/github.com/albatross/ros/devel
-
-Name: alb_base
-Description: Description of alb_base
-Version: 1.2.4
-Cflags: -I/home/whymatter/github.com/albatross/ros/src/alb_base/include/
-Libs: -L/home/whymatter/github.com/albatross/ros/devel/lib -lalb_base
-Requires: 
+/home/whymatter/github.com/albatross/ros/devel/.private/alb_base/lib/pkgconfig/alb_base.pc

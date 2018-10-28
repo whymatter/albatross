@@ -1,0 +1,1 @@
+/home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/share/common-lisp/ros/alb_ros_msgs/msg/_package.lisp

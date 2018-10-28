@@ -4,16 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node.cpp" "/home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_node.cpp.o"
-  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_publisher.cpp" "/home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_publisher.cpp.o"
-  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_subscriber.cpp" "/home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_subscriber.cpp.o"
+  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_ros_node_handle.cpp" "/home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_ros_node_handle.cpp.o"
+  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/src/alb_subscriber.cpp" "/home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/alb_ros_base.dir/src/alb_subscriber.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "ROSCONSOLE_BACKEND_LOG4CXX"
-  "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"alb_ros_base\""
   )
 

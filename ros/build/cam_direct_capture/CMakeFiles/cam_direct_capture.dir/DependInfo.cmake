@@ -14,15 +14,14 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "OPENCV_TRAITS_ENABLE_DEPRECATED"
   "ROSCONSOLE_BACKEND_LOG4CXX"
-  "ROS_BUILD_SHARED_LIBS=1"
   "ROS_PACKAGE_NAME=\"cam_direct_capture\""
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/whymatter/github.com/albatross/ros/src/cam_direct_capture/include/cam_direct_capture"
-  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include"
   "/home/whymatter/github.com/albatross/ros/src/alb_base/include"
+  "/home/whymatter/github.com/albatross/ros/src/alb_ros_base/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/local/include"
@@ -32,8 +31,6 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/whymatter/github.com/albatross/ros/build/alb_ros_base/CMakeFiles/alb_ros_base.dir/DependInfo.cmake"
-  "/home/whymatter/github.com/albatross/ros/build/alb_base/CMakeFiles/alb_base.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
