@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/pkgconfig/cam_direct_capture.pc

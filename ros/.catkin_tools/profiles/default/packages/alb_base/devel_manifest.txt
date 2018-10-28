@@ -1,5 +1,0 @@
-alb_base
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_base/lib/libalb_base.so /home/whymatter/github.com/albatross/ros/devel/lib/libalb_base.so
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_base/lib/pkgconfig/alb_base.pc /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/alb_base.pc
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_base/share/alb_base/cmake/alb_baseConfig-version.cmake /home/whymatter/github.com/albatross/ros/devel/share/alb_base/cmake/alb_baseConfig-version.cmake
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_base/share/alb_base/cmake/alb_baseConfig.cmake /home/whymatter/github.com/albatross/ros/devel/share/alb_base/cmake/alb_baseConfig.cmake

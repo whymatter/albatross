@@ -1,3 +1,0 @@
-Not searching for unused variables given on the command line.
-CMake Error: The source directory "/home/whymatter/github.com/albatross/ros/build/cam/OpenCV_DIR=/usr/local/share/OpenCV" does not exist.
-Specify --help for usage, or press the help button on the CMake GUI.

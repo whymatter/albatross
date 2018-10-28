@@ -1,6 +1,0 @@
-devel_space: /home/whymatter/github.com/albatross/ros/devel
-install: false
-install_space: /home/whymatter/github.com/albatross/ros/install
-profile: default
-source_space: /home/whymatter/github.com/albatross/ros/src
-workspace: /home/whymatter/github.com/albatross/ros

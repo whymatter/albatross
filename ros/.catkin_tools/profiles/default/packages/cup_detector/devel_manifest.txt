@@ -1,5 +1,0 @@
-cup_detector
-/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector/lib/pkgconfig/cup_detector.pc /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/cup_detector.pc
-/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector/lib/cup_detector/cup_detector /home/whymatter/github.com/albatross/ros/devel/lib/cup_detector/cup_detector
-/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector/share/cup_detector/cmake/cup_detectorConfig-version.cmake /home/whymatter/github.com/albatross/ros/devel/share/cup_detector/cmake/cup_detectorConfig-version.cmake
-/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector/share/cup_detector/cmake/cup_detectorConfig.cmake /home/whymatter/github.com/albatross/ros/devel/share/cup_detector/cmake/cup_detectorConfig.cmake

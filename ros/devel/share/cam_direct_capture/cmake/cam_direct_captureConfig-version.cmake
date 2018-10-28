@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/share/cam_direct_capture/cmake/cam_direct_captureConfig-version.cmake

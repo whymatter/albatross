@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_base/share/alb_base/cmake/alb_baseConfig.cmake

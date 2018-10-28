@@ -1,8 +1,0 @@
-prefix=/usr/local
-
-Name: static_environment
-Description: Description of static_environment
-Version: 1.2.4
-Cflags: -I/usr/local/include
-Libs: -L/usr/local/lib 
-Requires: alb_ros_base std_msgs

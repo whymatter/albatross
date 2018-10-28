@@ -1,8 +1,0 @@
-prefix=/home/whymatter/github.com/albatross/ros/devel/devel
-
-Name: yolo_detector
-Description: Description of yolo_detector
-Version: 1.2.4
-Cflags: -I/home/whymatter/github.com/albatross/ros/src/yolo_detector/include
-Libs: -L/home/whymatter/github.com/albatross/ros/devel/devel/lib 
-Requires: alb_ros_base image_transport std_msgs sensor_msgs cv_bridge

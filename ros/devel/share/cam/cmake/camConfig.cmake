@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/cam/share/cam/cmake/camConfig.cmake

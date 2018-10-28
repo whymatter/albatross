@@ -1,2 +1,0 @@
-/home/whymatter/github.com/albatross/ros/build/ai/CMakeFiles/rebuild_cache.dir
-/home/whymatter/github.com/albatross/ros/build/ai/CMakeFiles/edit_cache.dir

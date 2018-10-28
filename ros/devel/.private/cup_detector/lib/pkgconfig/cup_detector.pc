@@ -1,8 +1,0 @@
-prefix=/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector
-
-Name: cup_detector
-Description: Description of cup_detector
-Version: 1.2.4
-Cflags: -I/home/whymatter/github.com/albatross/ros/src/cup_detector/include
-Libs: -L/home/whymatter/github.com/albatross/ros/devel/.private/cup_detector/lib 
-Requires: alb_ros_base image_transport std_msgs sensor_msgs cv_bridge

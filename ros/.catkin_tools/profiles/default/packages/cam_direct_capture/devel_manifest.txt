@@ -1,5 +1,0 @@
-cam_direct_capture
-/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/pkgconfig/cam_direct_capture.pc /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/cam_direct_capture.pc
-/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/lib/cam_direct_capture/cam_direct_capture /home/whymatter/github.com/albatross/ros/devel/lib/cam_direct_capture/cam_direct_capture
-/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/share/cam_direct_capture/cmake/cam_direct_captureConfig-version.cmake /home/whymatter/github.com/albatross/ros/devel/share/cam_direct_capture/cmake/cam_direct_captureConfig-version.cmake
-/home/whymatter/github.com/albatross/ros/devel/.private/cam_direct_capture/share/cam_direct_capture/cmake/cam_direct_captureConfig.cmake /home/whymatter/github.com/albatross/ros/devel/share/cam_direct_capture/cmake/cam_direct_captureConfig.cmake

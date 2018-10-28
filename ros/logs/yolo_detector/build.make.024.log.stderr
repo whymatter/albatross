@@ -1,8 +1,0 @@
-In file included from [01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/src/main.cpp:8:0[m[K:
-[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:[m[K In constructor ‘[01m[Kalb::yolo_detector::CupDetectorNode<TNode>::CupDetectorNode(TNode&)[m[K’:
-[01m[K/home/whymatter/github.com/albatross/ros/src/yolo_detector/include/yolo_detector/yolo_detector_node.h:30:23:[m[K [01;31m[Kerror: [m[Kexpected identifier before ‘[01m[K{[m[K’ token
-                       [01;31m[K{[m[K
-                       [01;31m[K^[m[K
-make[2]: *** [CMakeFiles/yolo_detector.dir/src/main.cpp.o] Error 1
-make[1]: *** [CMakeFiles/yolo_detector.dir/all] Error 2
-make: *** [all] Error 2

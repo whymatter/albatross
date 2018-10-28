@@ -1,1 +1,0 @@
-/usr/bin/x86_64-linux-gnu-ld: warning: libopencv_core.so.3.4, needed by /usr/local/lib/libopencv_videoio.so.3.4.0, may conflict with libopencv_core.so.3.2

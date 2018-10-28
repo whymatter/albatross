@@ -1,8 +1,0 @@
-prefix=/home/whymatter/github.com/albatross/ros/install
-
-Name: alb_ros_base
-Description: Description of alb_ros_base
-Version: 1.2.4
-Cflags: -I/home/whymatter/github.com/albatross/ros/install/include
-Libs: -L/home/whymatter/github.com/albatross/ros/install/lib -lalb_ros_base
-Requires: alb_base roscpp

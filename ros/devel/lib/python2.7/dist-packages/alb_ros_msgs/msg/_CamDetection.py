@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/lib/python2.7/dist-packages/alb_ros_msgs/msg/_CamDetection.py

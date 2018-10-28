@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/static_environment/share/static_environment/cmake/static_environmentConfig-version.cmake

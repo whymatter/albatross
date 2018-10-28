@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/alb_ros_msgs/lib/pkgconfig/alb_ros_msgs.pc

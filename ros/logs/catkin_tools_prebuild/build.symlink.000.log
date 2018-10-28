@@ -1,8 +1,0 @@
-Symlinking /home/whymatter/github.com/albatross/ros/devel/./env.sh
-Symlinking /home/whymatter/github.com/albatross/ros/devel/./setup.sh
-Symlinking /home/whymatter/github.com/albatross/ros/devel/./setup.zsh
-Symlinking /home/whymatter/github.com/albatross/ros/devel/./setup.bash
-Symlinking /home/whymatter/github.com/albatross/ros/devel/./_setup_util.py
-Symlinking /home/whymatter/github.com/albatross/ros/devel/lib/pkgconfig/catkin_tools_prebuild.pc
-Symlinking /home/whymatter/github.com/albatross/ros/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig.cmake
-Symlinking /home/whymatter/github.com/albatross/ros/devel/share/catkin_tools_prebuild/cmake/catkin_tools_prebuildConfig-version.cmake

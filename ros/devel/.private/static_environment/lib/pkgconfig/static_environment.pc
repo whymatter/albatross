@@ -1,8 +1,0 @@
-prefix=/home/whymatter/github.com/albatross/ros/devel/.private/static_environment
-
-Name: static_environment
-Description: Description of static_environment
-Version: 1.2.4
-Cflags: -I/home/whymatter/github.com/albatross/ros/src/static_environment/include
-Libs: -L/home/whymatter/github.com/albatross/ros/devel/.private/static_environment/lib 
-Requires: alb_ros_base std_msgs

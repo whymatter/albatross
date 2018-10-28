@@ -1,1 +1,0 @@
-/home/whymatter/github.com/albatross/ros/devel/.private/yolo_detector/share/yolo_detector/cmake/yolo_detectorConfig.cmake
