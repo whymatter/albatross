@@ -45,6 +45,8 @@ add_library(
 add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
 
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
+
 add_executable(
         ${PROJECT_NAME}_node
         src/main.cpp)

@@ -7,7 +7,7 @@ find_package(
 
 catkin_package(
         INCLUDE_DIRS
-        ${CMAKE_CURRENT_SOURCE_DIR}/include/
+        include/
         LIBRARIES
         ${PROJECT_NAME}
 )

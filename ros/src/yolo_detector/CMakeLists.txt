@@ -7,6 +7,8 @@ get_property(OpenCV_DIR GLOBAL PROPERTY OpenCV_DIR)
 get_property(Darknet_include_DIR GLOBAL PROPERTY Darknet_include_DIR)
 get_property(Darknet_link_DIR GLOBAL PROPERTY Darknet_link_DIR)
 
+message(STATUS, "${Darknet_link_DIR}")
+
 find_package(
         catkin REQUIRED COMPONENTS
         roscpp alb_ros_base OpenCV cv_bridge alb_msgs alb_ros_msgs
@@ -39,6 +41,6 @@ add_executable(
         src/main.cpp
         src/darknet_main.cpp
         src/detector.cpp
-        src/detector_visualizer.cpp)
+        src/detector_visualizer.cpp include/yolo_detector/bbox_color_t.h)
 add_dependencies(${PROJECT_NAME}_node ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME}_node darknet ${catkin_LIBRARIES})

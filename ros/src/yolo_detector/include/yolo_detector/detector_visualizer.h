@@ -13,19 +13,20 @@
 #define OPENCV
 
 #include <yolo_v2_class.hpp>
+#include "bbox_color_t.h"
 
 namespace alb {
-    namespace yolo_detector {
-        class DetectorVisualizer {
-        public:
-            explicit DetectorVisualizer(std::vector<std::string> objectNames);
+ namespace yolo_detector {
+  class DetectorVisualizer {
+  public:
+      explicit DetectorVisualizer(std::vector<std::string> objectNames);
 
-            ::cv::Mat DrawBoxes(const ::cv::Mat &frame, std::vector<::bbox_t> detections);
+      ::cv::Mat DrawBoxes(const ::cv::Mat &frame, const std::vector<bbox_color_t> &detections);
 
-        private:
-            std::vector<std::string> objectNames_;
-        };
-    }
+  private:
+      std::vector<std::string> objectNames_;
+  };
+ }
 }
 
 #endif //PROJECT_DETECTOR_VISUALIZER_H
