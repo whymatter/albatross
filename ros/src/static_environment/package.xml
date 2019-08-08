@@ -9,6 +9,10 @@
 
     <depend>alb_ros_base</depend>
     <depend>std_msgs</depend>
+    <depend>alb_msgs</depend>
+    <depend>alb_ros_msgs</depend>
+    <depend>cam_transform</depend>
+    <depend>rviz_visual_tools</depend>
 
     <buildtool_depend>catkin</buildtool_depend>
 </package>

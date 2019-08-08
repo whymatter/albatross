@@ -15,6 +15,14 @@ namespace alb {
       BoundingBox boundingBox;
       float propability;
       uint32_t objectId;
+
+      explicit CamDetection() {}
+
+      CamDetection(const BoundingBox &boundingBox_, float propability_, uint32_t objectId_)
+              : boundingBox(boundingBox_), propability(propability_), objectId(objectId_) {}
+
+      CamDetection(const BoundingBox &&boundingBox_, float propability_, uint32_t objectId_)
+              : boundingBox(boundingBox_), propability(propability_), objectId(objectId_) {}
   };
  }
 }

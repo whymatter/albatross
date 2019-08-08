@@ -17,6 +17,9 @@ namespace alb {
             }
 
             bool OpenCVVideoCapturer::start() {
+                system("v4l2-ctl --set-ctrl=focus_absolute=0");
+                system("v4l2-ctl --set-ctrl=focus_auto=0");
+
                 bool success = this->videoCapture_.open(this->camera_index_);
                 if (success) {
                     this->videoCapture_.set(CV_CAP_PROP_FRAME_WIDTH, 640);

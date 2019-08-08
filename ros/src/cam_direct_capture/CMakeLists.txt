@@ -24,12 +24,12 @@ catkin_package(
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include/cam_direct_capture ${catkin_INCLUDE_DIRS})
 
 add_executable(
-        ${PROJECT_NAME}
+        ${PROJECT_NAME}_node
         include/cam_direct_capture/cam_direct_capture_node.h
         include/cam_direct_capture/opencv_video_capturer.h
         src/cam_direct_capture_node.cpp
         src/opencv_video_capturer.cpp
         src/main.cpp
 )
-add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES})
+add_dependencies(${PROJECT_NAME}_node ${catkin_EXPORTED_TARGETS})
+target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})
