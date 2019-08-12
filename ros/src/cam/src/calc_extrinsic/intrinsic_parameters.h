@@ -2,10 +2,9 @@
 // Created by whymatter on 28.09.18.
 //
 
-#include "opencv2/opencv.hpp"
+#pragma once
 
-#ifndef CAM_INTRINSIC_PARAMETERS_H
-#define CAM_INTRINSIC_PARAMETERS_H
+#include "opencv2/opencv.hpp"
 
 cv::Mat intrinsic = (cv::Mat_<double>(
         {1414.25894999856, 0               , 937.625189031865,
@@ -18,5 +17,3 @@ cv::Mat distortion = (cv::Mat_<double>({
     /* p1 */  0.003460337109318,
     /* p2 */ -3.196073231590876e-04,
     /* k3 */  0.236567290041656}));
-
-#endif //CAM_INTRINSIC_PARAMETERS_H

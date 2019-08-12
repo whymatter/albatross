@@ -2,8 +2,7 @@
 // Created by whymatter on 07.10.18.
 //
 
-#ifndef NN_TESTER_MAIN_H
-#define NN_TESTER_MAIN_H
+#pragma once
 
 #include "ros/ros.h"
 
@@ -17,6 +16,3 @@ public:
 private:
     ros::NodeHandle n_;
 };
-
-
-#endif //NN_TESTER_MAIN_H

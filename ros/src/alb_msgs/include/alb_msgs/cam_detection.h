@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_CAM_DETECTION_H
-#define PROJECT_CAM_DETECTION_H
+#pragma once
 
 #include <cstdint>
 
@@ -27,5 +26,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_CAM_DETECTION_H

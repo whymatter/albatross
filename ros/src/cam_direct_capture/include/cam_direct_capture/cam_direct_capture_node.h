@@ -2,8 +2,7 @@
 // Created by whymatter on 20.10.18.
 //
 
-#ifndef CAM_DIRECT_CAPTURE_CAM_DIRECT_CAPTURE_NODE_H
-#define CAM_DIRECT_CAPTURE_CAM_DIRECT_CAPTURE_NODE_H
+#pragma once
 
 #include <ros/ros.h>
 #include <sensor_msgs/image_encodings.h>
@@ -57,5 +56,3 @@ namespace alb {
         }
     }
 }
-
-#endif //CAM_DIRECT_CAPTURE_CAM_DIRECT_CAPTURE_NODE_H

@@ -2,8 +2,7 @@
 // Created by whymatter on 21.10.18.
 //
 
-#ifndef CAM_DIRECT_CAPTURE_OPENCV_VIDEO_CAPTURER_H
-#define CAM_DIRECT_CAPTURE_OPENCV_VIDEO_CAPTURER_H
+#pragma once
 
 #include <boost/optional.hpp>
 #include <opencv2/opencv.hpp>
@@ -29,5 +28,3 @@ namespace alb {
         }
     }
 }
-
-#endif //CAM_DIRECT_CAPTURE_OPENCV_VIDEO_CAPTURER_H

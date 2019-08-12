@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_POINT_H
-#define PROJECT_POINT_H
+#pragma once
 
 #include <cstdint>
 
@@ -19,5 +18,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_POINT_H

@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_POINT_CONVERTER_H
-#define PROJECT_POINT_CONVERTER_H
+#pragma once
 
 #include <geometry_msgs/Point.h>
 #include "alb_msgs/point.h"
@@ -27,5 +26,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_POINT_CONVERTER_H

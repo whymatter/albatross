@@ -2,8 +2,7 @@
 // Created by whymatter on 26.10.18.
 //
 
-#ifndef PROJECT_ALB_ROS_NODE_HANDLE_H
-#define PROJECT_ALB_ROS_NODE_HANDLE_H
+#pragma once
 
 #include <string>
 #include <boost/function.hpp>
@@ -53,5 +52,3 @@ namespace alb {
   }
  }
 }
-
-#endif //PROJECT_ALB_ROS_NODE_HANDLE_H

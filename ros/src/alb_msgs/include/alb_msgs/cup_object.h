@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_CUP_OBJECT_H
-#define PROJECT_CUP_OBJECT_H
+#pragma once
 
 #include <cstdint>
 
@@ -26,5 +25,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_CUP_OBJECT_H

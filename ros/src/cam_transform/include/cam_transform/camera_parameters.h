@@ -2,10 +2,9 @@
 // Created by whymatter on 28.09.18.
 //
 
-#include "opencv2/opencv.hpp"
+#pragma once
 
-#ifndef CAM_INTRINSIC_PARAMETERS_H
-#define CAM_INTRINSIC_PARAMETERS_H
+#include "opencv2/opencv.hpp"
 
 #define INTRINSIC_1 1414.25894999856, 0               , 937.625189031865
 #define INTRINSIC_2 0               , 1411.75549482935, 552.617728282796
@@ -50,5 +49,3 @@ namespace alb {
                                                  /* k3 */  0.236567290041656}));
  }
 }
-
-#endif //CAM_INTRINSIC_PARAMETERS_H

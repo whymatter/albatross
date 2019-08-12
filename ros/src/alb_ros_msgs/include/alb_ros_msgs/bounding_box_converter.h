@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_BOUNDING_BOX_CONVERTER_H
-#define PROJECT_BOUNDING_BOX_CONVERTER_H
+#pragma once
 
 #include "alb_ros_msgs/BoundingBox.h"
 #include "alb_msgs/bounding_box.h"
@@ -20,5 +19,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_BOUNDING_BOX_CONVERTER_H

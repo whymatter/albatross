@@ -2,8 +2,7 @@
 // Created by whymatter on 21.10.18.
 //
 
-#ifndef CAM_DIRECT_CAPTURE_ALB_ROS_PUBLISHER_H
-#define CAM_DIRECT_CAPTURE_ALB_ROS_PUBLISHER_H
+#pragma once
 
 #include <ros/ros.h>
 #include <boost/shared_ptr.hpp>
@@ -51,5 +50,3 @@ namespace alb {
         }
     }
 }
-
-#endif //CAM_DIRECT_CAPTURE_ALB_ROS_PUBLISHER_H

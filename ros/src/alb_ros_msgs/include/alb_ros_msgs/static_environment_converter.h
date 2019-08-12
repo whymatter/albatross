@@ -2,8 +2,7 @@
 // Created by whymatter on 12.08.19.
 //
 
-#ifndef STATIC_ENVIRONMENT_CONVERTER_H
-#define STATIC_ENVIRONMENT_CONVERTER_H
+#pragma once
 
 #include <cstdint>
 
@@ -31,5 +30,3 @@ namespace alb {
   };
  }
 }
-
-#endif //STATIC_ENVIRONMENT_CONVERTER_H

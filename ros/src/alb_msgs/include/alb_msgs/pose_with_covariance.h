@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_POSE_WITH_COVARIANCE_H
-#define PROJECT_POSE_WITH_COVARIANCE_H
+#pragma once
 
 #include <cstdint>
 #include <vector>
@@ -26,5 +25,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_POSE_WITH_COVARIANCE_H

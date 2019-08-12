@@ -2,8 +2,7 @@
 // Created by whymatter on 31.10.18.
 //
 
-#ifndef PROJECT_ENVIRONMENT_CORE_H
-#define PROJECT_ENVIRONMENT_CORE_H
+#pragma once
 
 #include "alb_msgs/cam_detections.h"
 #include "alb_msgs/cup_object.h"
@@ -25,5 +24,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_ENVIRONMENT_CORE_H

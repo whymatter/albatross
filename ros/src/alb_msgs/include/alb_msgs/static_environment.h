@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_STATIC_ENVIRONMENT_H
-#define PROJECT_STATIC_ENVIRONMENT_H
+#pragma once
 
 #include <cstdint>
 #include <utility>
@@ -24,5 +23,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_STATIC_ENVIRONMENT_H

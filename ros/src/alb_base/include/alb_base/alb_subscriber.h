@@ -2,8 +2,7 @@
 // Created by whymatter on 21.10.18.
 //
 
-#ifndef CAM_DIRECT_CAPTURE_ALB_SUBSCRIBER_H
-#define CAM_DIRECT_CAPTURE_ALB_SUBSCRIBER_H
+#pragma once
 
 namespace alb {
     namespace base {
@@ -15,5 +14,3 @@ namespace alb {
         };
     }
 }
-
-#endif //CAM_DIRECT_CAPTURE_ALB_SUBSCRIBER_H

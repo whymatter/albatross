@@ -2,8 +2,7 @@
 // Created by whymatter on 27.10.18.
 //
 
-#ifndef PROJECT_CUP_DETECTOR_NODE_H
-#define PROJECT_CUP_DETECTOR_NODE_H
+#pragma once
 
 #include <sensor_msgs/image_encodings.h>
 #include <cv_bridge/cv_bridge.h>
@@ -153,5 +152,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_CUP_DETECTOR_NODE_H

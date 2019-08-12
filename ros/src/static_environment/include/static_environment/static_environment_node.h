@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_STATIC_ENVIRONMENT_NODE_H
-#define PROJECT_STATIC_ENVIRONMENT_NODE_H
+#pragma once
 
 #include <boost/bind.hpp>
 #include <alb_ros_msgs/static_environment_converter.h>
@@ -55,5 +54,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_STATIC_ENVIRONMENT_NODE_H

@@ -2,8 +2,7 @@
 // Created by whymatter on 17.12.18.
 //
 
-#ifndef PROJECT_CAM_TRANSFORM_SERVICE_H
-#define PROJECT_CAM_TRANSFORM_SERVICE_H
+#pragma once
 
 #include <vector>
 
@@ -26,5 +25,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_CAM_TRANSFORM_SERVICE_H

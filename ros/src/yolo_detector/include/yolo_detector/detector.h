@@ -2,8 +2,7 @@
 // Created by whymatter on 27.10.18.
 //
 
-#ifndef PROJECT_DETECTOR_H
-#define PROJECT_DETECTOR_H
+#pragma once
 
 #include <vector>
 #include <string>
@@ -28,4 +27,3 @@ namespace alb {
     }
 }
 
-#endif //PROJECT_DETECTOR_H

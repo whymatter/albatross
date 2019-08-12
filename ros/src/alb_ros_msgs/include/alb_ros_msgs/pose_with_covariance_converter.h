@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_POSE_WITH_COVARIANCE_CONVERTER_H
-#define PROJECT_POSE_WITH_COVARIANCE_CONVERTER_H
+#pragma once
 
 #include <geometry_msgs/PoseWithCovariance.h>
 #include "alb_msgs/pose_with_covariance.h"
@@ -20,5 +19,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_POSE_WITH_COVARIANCE_CONVERTER_H

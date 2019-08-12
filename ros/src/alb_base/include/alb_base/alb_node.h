@@ -2,8 +2,7 @@
 // Created by whymatter on 20.10.18.
 //
 
-#ifndef PROJECT_ALB_NODE_H
-#define PROJECT_ALB_NODE_H
+#pragma once
 
 #include <string>
 #include <boost/function.hpp>
@@ -49,5 +48,3 @@ namespace alb {
         };
     }
 }
-
-#endif //PROJECT_ALB_NODE_H

@@ -2,8 +2,7 @@
 // Created by whymatter on 28.10.18.
 //
 
-#ifndef PROJECT_CUP_OBJECT_CONVERTER_H
-#define PROJECT_CUP_OBJECT_CONVERTER_H
+#pragma once
 
 #include "alb_msgs/cup_object.h"
 #include "alb_ros_msgs/CupObject.h"
@@ -26,5 +25,3 @@ namespace alb {
   };
  }
 }
-
-#endif //PROJECT_CUP_OBJECT_CONVERTER_H
