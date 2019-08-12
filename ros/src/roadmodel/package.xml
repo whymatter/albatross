@@ -1,0 +1,18 @@
+<package format="2">
+    <name>roadmodel</name>
+    <version>1.2.4</version>
+    <description>
+        This package provides foo capability.
+    </description>
+    <maintainer email="seitz-oliver@gmx.de">Oliver Seitz</maintainer>
+    <license>BSD</license>
+
+    <depend>alb_ros_base</depend>
+    <depend>std_msgs</depend>
+    <depend>alb_msgs</depend>
+    <depend>alb_ros_msgs</depend>
+    <depend>static_environment</depend>
+    <depend>rviz_visual_tools</depend>
+
+    <buildtool_depend>catkin</buildtool_depend>
+</package>
