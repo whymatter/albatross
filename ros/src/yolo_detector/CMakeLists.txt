@@ -7,8 +7,6 @@ get_property(OpenCV_DIR GLOBAL PROPERTY OpenCV_DIR)
 get_property(Darknet_include_DIR GLOBAL PROPERTY Darknet_include_DIR)
 get_property(Darknet_link_DIR GLOBAL PROPERTY Darknet_link_DIR)
 
-message(STATUS, "${Darknet_link_DIR}")
-
 find_package(
         catkin REQUIRED COMPONENTS
         roscpp alb_ros_base OpenCV cv_bridge alb_msgs alb_ros_msgs

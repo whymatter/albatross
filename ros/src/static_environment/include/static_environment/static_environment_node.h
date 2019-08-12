@@ -6,6 +6,7 @@
 #define PROJECT_STATIC_ENVIRONMENT_NODE_H
 
 #include <boost/bind.hpp>
+#include <alb_ros_msgs/static_environment_converter.h>
 
 #include "alb_base/alb_node.h"
 
@@ -14,7 +15,6 @@
 #include "alb_ros_msgs/StaticEnvironment.h"
 #include "alb_ros_msgs/CamDetections.h"
 #include "alb_ros_msgs/cam_detections_converter.h"
-#include "alb_ros_msgs/converter.h"
 
 #include "environment_core.h"
 
@@ -36,9 +36,10 @@ namespace alb {
       }
 
       void DetectorCallback(const ::alb_ros_msgs::CamDetectionsConstPtr &ros) {
-          auto cups = this->environmentCore_.CalculateEnvironment(this->camDetectionsConverter_.Convert(ros));
+          std::vector<::alb::alb_msgs::CupObject> cups = this->environmentCore_.CalculateEnvironment(
+                  this->camDetectionsConverter_.Convert(ros));
           ::alb::alb_msgs::StaticEnvironment response(cups);
-          auto rosResponse = ::alb::alb_ros_msgs::Convert<::alb::alb_msgs::StaticEnvironment, ::alb_ros_msgs::StaticEnvironment>(response);
+          auto rosResponse = this->staticEnvironmentConverter_.Convert(response);
           this->staticEnvironmentPublisher_.Publish(rosResponse);
       }
 
@@ -48,6 +49,7 @@ namespace alb {
 
   private:
       ::alb::alb_ros_msgs::CamDetectionsConverter camDetectionsConverter_{};
+      ::alb::alb_ros_msgs::StaticEnvironmentConverter staticEnvironmentConverter_{};
       EnvironmentCore environmentCore_;
       typename TNode::template Publisher<::alb_ros_msgs::StaticEnvironment> staticEnvironmentPublisher_;
   };

@@ -8,7 +8,6 @@
 #include <opencv2/opencv.hpp>
 
 #include "cam_transform/ProjectToWorld.h"
-#include "alb_ros_msgs/converter.h"
 
 #include "camera_parameters.h"
 

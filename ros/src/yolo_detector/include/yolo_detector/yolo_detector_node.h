@@ -122,10 +122,12 @@ namespace alb {
 
           ::alb::alb_msgs::CamDetections alb_detections;
 
-          std::transform(detections.begin(), detections.end(), std::back_inserter(alb_detections.detections),
-                         [this](const ::bbox_t &it) -> ::alb::alb_msgs::CamDetection {
-                             return ::alb::alb_msgs::CamDetection{::alb::alb_msgs::BoundingBox{it.x, it.y, it.w, it.h},
-                                                                  it.prob, it.obj_id};
+          std::transform(detectionsWithColor.begin(), detectionsWithColor.end(),
+                         std::back_inserter(alb_detections.detections),
+                         [this](const ::bbox_color_t &it) -> ::alb::alb_msgs::CamDetection {
+                             return ::alb::alb_msgs::CamDetection{
+                                     ::alb::alb_msgs::BoundingBox{it.box.x, it.box.y, it.box.w, it.box.h},
+                                     it.box.prob, it.box.obj_id, it.dominantColor};
                          });
           ::alb::alb_ros_msgs::CamDetectionsConverter camDetectionsConverter{};
           this->detectionsPublisher_.Publish(camDetectionsConverter.Convert(alb_detections));

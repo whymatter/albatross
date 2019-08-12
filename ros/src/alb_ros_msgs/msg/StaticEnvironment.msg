@@ -1,1 +1,1 @@
-geometry_msgs/Point[] cups
+CupObject[] cups

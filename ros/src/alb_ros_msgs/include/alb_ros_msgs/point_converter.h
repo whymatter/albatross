@@ -17,11 +17,13 @@ namespace alb {
           return ::alb::alb_msgs::Point{ros->x, ros->y, ros->z};
       }
 
-      ::alb::alb_msgs::Point Convert(::geometry_msgs::Point ros) const;
+      ::alb::alb_msgs::Point Convert(const ::geometry_msgs::Point &ros) const;
 
       ::alb::alb_msgs::Point Convert(const ::geometry_msgs::PointPtr &ros) const;
 
       ::alb::alb_msgs::Point Convert(const ::geometry_msgs::PointConstPtr &ros) const;
+
+      ::geometry_msgs::Point Convert(const ::alb::alb_msgs::Point &alb) const;
   };
  }
 }

@@ -10,6 +10,7 @@
 #include <ros/ros.h>
 #include "cam_transform/ProjectToWorld.h"
 #include "alb_msgs/point.h"
+#include "alb_ros_msgs/point_converter.h"
 
 namespace alb {
  namespace cam_transform {
@@ -21,6 +22,7 @@ namespace alb {
 
   private:
       ::ros::ServiceClient serviceClient_;
+      ::alb::alb_ros_msgs::PointConverter pointConverter_{};
   };
  }
 }

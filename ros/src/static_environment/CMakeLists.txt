@@ -12,14 +12,14 @@ find_package(
 
 catkin_package(
         INCLUDE_DIRS
-            include
+        include
         CATKIN_DEPENDS
-            alb_ros_base
-            alb_ros_msgs
-            rviz_visual_tools
-            cam_transform
-            alb_msgs
-            std_msgs
+        alb_ros_base
+        alb_ros_msgs
+        rviz_visual_tools
+        cam_transform
+        alb_msgs
+        std_msgs
 )
 
 if (NOT_CATKIN)

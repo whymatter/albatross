@@ -6,19 +6,21 @@
 #define PROJECT_STATIC_ENVIRONMENT_H
 
 #include <cstdint>
+#include <utility>
 #include <vector>
 
 #include "point.h"
+#include "cup_object.h"
 
 namespace alb {
  namespace alb_msgs {
   struct StaticEnvironment {
-      std::vector <Point> cups;
+      std::vector<CupObject> cups;
 
       StaticEnvironment() = default;
 
-      explicit StaticEnvironment(std::vector <Point> cups_)
-              : cups(cups_) {}
+      explicit StaticEnvironment(std::vector<CupObject> cups_)
+              : cups(std::move(cups_)) {}
   };
  }
 }

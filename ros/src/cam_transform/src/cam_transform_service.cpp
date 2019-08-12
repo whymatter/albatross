@@ -3,7 +3,6 @@
 //
 
 #include <cam_transform_service.h>
-#include "alb_ros_msgs/converter.h"
 
 namespace alb {
  namespace cam_transform {
@@ -15,7 +14,7 @@ namespace alb {
       ::cam_transform::ProjectToWorld projectToWorldService;
 
       for (auto& imagePoint : imagePoints) {
-          ::geometry_msgs::Point p = ::alb::alb_ros_msgs::Convert<::alb::alb_msgs::Point, ::geometry_msgs::Point>(imagePoint);
+          ::geometry_msgs::Point p = this->pointConverter_.Convert(imagePoint);
           projectToWorldService.request.imagePoints.push_back(p);
       }
 
@@ -29,7 +28,7 @@ namespace alb {
       std::transform(projectToWorldService.response.worldPoints.begin(),
                      projectToWorldService.response.worldPoints.end(),
                      ::std::back_inserter(objectPoints),
-                     [](const ::geometry_msgs::Point &ros) -> ::alb::alb_msgs::Point { return ::alb::alb_ros_msgs::Convert<::geometry_msgs::Point, ::alb::alb_msgs::Point>(ros); });
+                     [this](const ::geometry_msgs::Point &ros) -> ::alb::alb_msgs::Point { return this->pointConverter_.Convert(ros); });
 
       return objectPoints;
   }

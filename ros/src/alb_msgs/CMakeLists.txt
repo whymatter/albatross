@@ -19,6 +19,7 @@ add_library(
         include/alb_msgs/bounding_box.h
         include/alb_msgs/cam_detection.h
         include/alb_msgs/cam_detections.h
+        include/alb_msgs/cup_object.h
         include/alb_msgs/point.h
         include/alb_msgs/pose.h
         include/alb_msgs/pose_with_covariance.h

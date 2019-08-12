@@ -9,17 +9,17 @@ namespace alb {
 
   ::alb::alb_msgs::CamDetection CamDetectionConverter::Convert(const ::alb_ros_msgs::CamDetection &ros) const {
       return ::alb::alb_msgs::CamDetection{this->boundingBoxConverter_.Convert(ros.boundingBox), ros.propability,
-                                           ros.objectId};
+                                           ros.objectId, ros.hue};
   }
 
   ::alb::alb_msgs::CamDetection CamDetectionConverter::Convert(const ::alb_ros_msgs::CamDetectionPtr &ros) const {
       return ::alb::alb_msgs::CamDetection{this->boundingBoxConverter_.Convert(ros->boundingBox), ros->propability,
-                                           ros->objectId};
+                                           ros->objectId, ros->hue};
   }
 
   ::alb::alb_msgs::CamDetection CamDetectionConverter::Convert(const ::alb_ros_msgs::CamDetectionConstPtr &ros) const {
       return ::alb::alb_msgs::CamDetection{this->boundingBoxConverter_.Convert(ros->boundingBox), ros->propability,
-                                           ros->objectId};
+                                           ros->objectId, ros->hue};
   }
 
   ::alb_ros_msgs::CamDetection CamDetectionConverter::Convert(const ::alb::alb_msgs::CamDetection &alb) const {
@@ -33,6 +33,7 @@ namespace alb {
       detection.objectId = alb.objectId;
       detection.propability = alb.propability;
       detection.boundingBox = boundingBox;
+      detection.hue = alb.hue;
 
       return detection;
   }
