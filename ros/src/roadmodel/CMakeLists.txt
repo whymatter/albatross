@@ -30,7 +30,7 @@ add_executable(
         ${PROJECT_NAME}_node
         src/main.cpp
         include/roadmodel/roadmodel_node.h
-        src/roadmodel_node.cpp)
+        src/roadmodel_node.cpp include/roadmodel/spline.h)
 
 add_dependencies(${PROJECT_NAME}_node ${catkin_EXPORTED_TARGETS})
 target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})

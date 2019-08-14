@@ -59,21 +59,15 @@ namespace alb {
       ::cv::Vec3f c0 = centers.at<::cv::Vec3f>(0);
       ::cv::Vec3f c1 = centers.at<::cv::Vec3f>(1);
 
-      ROS_INFO_STREAM("L = " << labels.size);
-      ROS_INFO_STREAM("C = " << 360.0 / 180 * c0[0] << "," << 100.0 / 255 * c0[1] << "," << 100.0 / 255 * c0[2]);
-      ROS_INFO_STREAM("C = " << 360.0 / 180 * c1[0] << "," << 100.0 / 255 * c1[1] << "," << 100.0 / 255 * c1[2]);
-
       int numNonZero = ::cv::countNonZero(labels);
       int numZero = labels.size[0] - numNonZero;
 
       // assert that the gap between both clusters is big enough
-      ROS_WARN_COND(abs(numZero - numNonZero) > labels.size[0] * 0.3, "cluster almost equal", numNonZero, numZero);
+      ROS_WARN_COND(abs(numZero - numNonZero) > labels.size[0] * 0.3, "cluster almost equal, %d, %d, %f, %f", numNonZero, numZero, centers.at<::cv::Vec3f>(0)[0] / 180.0 * 360.0, centers.at<::cv::Vec3f>(1)[0] / 180.0 * 360.0);
 
       int majorityIndex = numZero > numNonZero ? 0 : 1;
 
-      ROS_INFO_STREAM("Winning: " << majorityIndex);
-
-      output.dominantColor = centers.at<::cv::Vec3f>(majorityIndex)[0];
+      output.dominantColor = centers.at<::cv::Vec3f>(majorityIndex)[0] / 180.0 * 360.0;
 
       return output;
   }
