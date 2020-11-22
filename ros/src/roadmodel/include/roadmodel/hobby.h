@@ -1,6 +1,8 @@
 //
-// Created by whymatter on 14.08.19.
+// Created by seitz on 11/21/20.
 //
+
+#pragma once
 
 #pragma once
 
@@ -10,4 +12,4 @@
 
 #include "matrix.h"
 
-Eigen::MatrixXd spline(const MatrixX2d &knots);
+Eigen::MatrixXd splineHobby(const MatrixX2d &knots);

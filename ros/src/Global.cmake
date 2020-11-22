@@ -1,6 +1,6 @@
 # OpenCV install folder
-set_property(GLOBAL PROPERTY OpenCV_DIR "/usr/local/share/OpenCV/")
+set_property(GLOBAL PROPERTY OpenCV_DIR $ENV{OpenCV_DIR})
 
 # Darknet include
-set_property(GLOBAL PROPERTY Darknet_include_DIR "/home/whymatter/github.com/albatross/ros/src/third-party/darknet/src")
-set_property(GLOBAL PROPERTY Darknet_link_DIR "/home/whymatter/github.com/albatross/ros/src/third-party/darknet")
+set_property(GLOBAL PROPERTY Darknet_include_DIR $ENV{Darknet_DIR}/src)
+set_property(GLOBAL PROPERTY Darknet_link_DIR $ENV{Darknet_DIR})
